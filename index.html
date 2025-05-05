@@ -1,69 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Grégoire Fortune</title>
-    <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="CSS/index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grégoire FORTUNÉ | Porfolio</title>
+  <link rel="icon" type="image/png" href="/images/iconOnglet.png">
+  <!-- script -->
+  <script src="/javaScript/navbar.js"></script>
+  <script src="/javaScript/footer.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/navbar.css">
 </head>
 <body>
-    <header>
-        <h1>Bienvenue sur mon portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#Page1">Page 1</a></li>
-                <li><a href="#Page2">Page 2</a></li>
-                <li><a href="#Page3">Page 3</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <sommaire>
-        <ul>
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#projects">Projets</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </sommaire>
-
-    <main>
-        <section id="me">
-            <h1>FORTUNÉ<br>Grégoire</h1>
-            <p>Étudiant de 1ère année en B.U.T. informatique</p>
-        </section>
-        <section id="about">
-            <h2>À propos de moi</h2>
-            <p>Je suis Grégoire Fortune, un développeur passionné par la création de sites web et d'applications.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Mes projets</h2>
-            <div class="project">
-                <h3>Projet 1</h3>
-                <p>Description du projet 1.</p>
-            </div>
-            <div class="project">
-                <h3>Projet 2</h3>
-                <p>Description du projet 2.</p>
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <section id="contact">
-            <h2>Contactez-moi</h2>
-            <form action="submit_form.php" method="post">
-                <label for="name">Nom:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Envoyer</button>
-            </form>
-        </section>
-        <p>&copy; 2025 Grégoire Fortune. Tous droits réservés.</p>
-    </footer>
+  <header>
+    <h1>Un titre / Une image</h1>
+    <div id="navbar"></div>
+  </header>
+  <main>
+    <section>
+      <h1>FORTUNÉ Grégoire</h1>
+      <p>Je suis <span id="dynamic-text"></span>.</p>
+      <script src="/javaScript/dynamic_text.js"></script>
+    </section>
+    <a href="/html/about.html"><img src="/images/darkRightArrow.png" alt="Flèche vers le bas" width="25px"></a> <!--en attendant le css-->
+    <div>
+    <!-- Flèche vers le bas qui amène vers le à propos de moi peut un bouton à voir-->
+    </div>
+  </main>
+  <footer>
+    <div id="footer"></div>
+  </footer>
 </body>
 </html>
