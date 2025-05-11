@@ -9,22 +9,22 @@ const dynamicText = document.getElementById("dynamic-text");
 
 function type() {
     if (charIndex < text[textIndex].length) {
-    dynamicText.textContent += text[textIndex].charAt(charIndex);
-    charIndex++;
-    setTimeout(type, typingSpeed);
+        dynamicText.textContent += text[textIndex].charAt(charIndex);
+        charIndex++;
+        setTimeout(type, typingSpeed);
     } else {
-    setTimeout(erase, delayBetweenText);
+        setTimeout(erase, delayBetweenText);
     }
 }
 
 function erase() {
     if (charIndex > 0) {
-    dynamicText.textContent = text[textIndex].substring(0, charIndex - 1);
-    charIndex--;
-    setTimeout(erase, erasingSpeed);
+        dynamicText.textContent = text[textIndex].substring(0, charIndex - 1);
+        charIndex--;
+        setTimeout(erase, erasingSpeed);
     } else {
-    textIndex = (textIndex + 1) % text.length;
-    setTimeout(type, typingSpeed);
+        textIndex = (textIndex + 1) % text.length;
+        setTimeout(type, typingSpeed);
     }
 }
 

@@ -1,0 +1,45 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+
+}
+
+section h1 {
+    font-size: 913%;
+}
+
+section p {
+    font-size: 345%;
+    padding: 20px;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        transform: rotate(90deg);
+        width: 70px;
+        height: 100px;
+        filter: invert(100%);
+    }
+
+    a {
+        transition: transform 0.3s ease, color 0.3s ease;
+        text-align: center;
+        width: 25%;
+    }
+
+    a:hover {
+        transform: translateY(20px);
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    }
+
+    a:active {
+        transform: translateY(15px);
+    }
+}
