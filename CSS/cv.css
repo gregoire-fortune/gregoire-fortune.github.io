@@ -1,0 +1,63 @@
+/* Style général pour le contenu de la page */
+
+
+/* Titres principaux */
+main h1, main h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Paragraphes */
+main p {
+    margin: 1rem 0;
+    text-align: justify;
+    color: #333;
+}
+
+/* Listes */
+main ul {
+    list-style: disc;
+    margin: 1rem 2rem;
+    padding: 0;
+}
+
+main ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* Images */
+main img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Liens */
+main a {
+    color: #1e1e2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Boutons */
+main button {
+    display: flex;
+    margin: auto auto;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+main button:hover {
+    background-color: #333;
+}

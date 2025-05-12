@@ -1,0 +1,78 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e2f; /* Fond sombre */
+    color: #ddd; /* Texte clair */
+}
+
+/* Titre principal */
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+/* Formulaire */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: rgba(50, 50, 53, 0.9); /* Fond sombre avec opacité */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Labels */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Champs de saisie */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #2e2e38;
+    color: #ffffff;
+    font-size: 1rem;
+}
+
+form textarea {
+    height: 200px; /* Augmente la hauteur de la zone de message */
+    resize: vertical; /* Permet à l'utilisateur de redimensionner verticalement */
+}
+
+/* Placeholder */
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaa;
+}
+
+/* Bouton d'envoi */
+form button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    background-color: #6a9ff8;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4a7cd1;
+}

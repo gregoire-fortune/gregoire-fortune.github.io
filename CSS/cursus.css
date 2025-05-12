@@ -84,11 +84,8 @@ h1 {
     text-align: center; /* Centre le titre horizontalement */
     font-size: 2.5rem; /* Taille de police plus grande */
     font-weight: bold; /* Met le texte en gras */
-    color: #333; /* Couleur sombre pour un bon contraste */
+    color: #ffffff; /* Couleur sombre pour un bon contraste */
     margin-bottom: 2rem; /* Ajoute un espace sous le titre */
     text-transform: uppercase; /* Met le texte en majuscules */
     letter-spacing: 2px; /* Ajoute un espacement entre les lettres */
-    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Dégradé de couleurs */
-    -webkit-background-clip: text; /* Applique le dégradé uniquement au texte */
-    -webkit-text-fill-color: transparent; /* Rend le fond du texte transparent */
 }

@@ -1,0 +1,93 @@
+/* Titres principaux */
+main h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #ffffff; /* Texte blanc pour les titres principaux */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+}
+
+/* Articles */
+main article {
+    margin: 3rem auto; /* Ajoute un espacement vertical et centre les articles */
+    padding: 1rem;
+    background: rgba(50, 50, 53, 0.9); /* Fond sombre avec opacité pour les articles */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%; /* Limite la largeur des articles pour éviter qu'ils collent aux bords */
+}
+
+/* Titres des articles */
+main article h2 {
+    font-size: 2rem;
+    color: #ffffff; /* Texte blanc pour les titres des articles */
+    border-bottom: 2px solid #ffffff; /* Ligne blanche sous les titres */
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* Sections */
+main article section {
+    margin-bottom: 2rem;
+    padding: 0 1rem; /* Ajoute un padding latéral pour éviter que le contenu colle aux bords */
+}
+
+/* Titres des sections */
+main article section h3 {
+    font-size: 1.5rem;
+    color: #ddd; /* Texte clair pour les titres des sections */
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Paragraphes */
+main article section p {
+    text-align: justify;
+    margin-bottom: 1rem;
+    color: #ccc; /* Texte légèrement plus clair pour les paragraphes */
+}
+
+/* Images */
+main article section img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 1rem auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre plus marquée pour les images */
+}
+
+/* Div pour les sous-sections */
+main article section div {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer en colonne si l'espace est insuffisant */
+    justify-content: center;
+    gap: 1rem; /* Ajoute un espacement entre les images */
+    margin-bottom: 1rem;
+}
+
+main article section div img {
+    flex: 0 1 calc(33.33% - 1rem); /* Chaque image occupe 1/3 de la largeur disponible */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre pour les images */
+}
+
+/* Liens */
+main a {
+    color: #6a9ff8; /* Texte bleu clair pour les liens */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+/* Ajustement des marges pour coller le main au footer */
+main {
+    margin-bottom: 0; /* Supprime toute marge en bas */
+    padding-bottom: 0; /* Supprime tout padding en bas */
+}
