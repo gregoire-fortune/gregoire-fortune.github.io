@@ -1,0 +1,94 @@
+/* Style général pour la timeline */
+.timeline {
+    position: relative;
+    margin: 2rem auto;
+    padding: 2rem 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+/* Flèche centrale */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid #ccc; /* Couleur de la flèche */
+}
+
+/* Ligne centrale sous la flèche */
+.timeline::after {
+    content: '';
+    position: absolute;
+    top: 20px; /* Position juste sous la flèche */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #ccc;
+}
+
+/* Style pour chaque élément de la timeline */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+}
+
+/* Contenu à gauche */
+.timeline-item.left {
+    left: 0;
+    text-align: right;
+}
+
+/* Contenu à droite */
+.timeline-item.right {
+    left: 50%;
+    text-align: left;
+}
+
+/* Style pour le contenu */
+.timeline-item .content {
+    background-color: rgba(46, 43, 43, 0.8);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Images dans le contenu */
+.timeline-item .content img {
+    display: block;
+    margin: 0 auto 1rem;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Ajustement des marges pour alternance */
+.timeline-item.left .content {
+    margin-right: auto;
+}
+
+.timeline-item.right .content {
+    margin-left: auto;
+}
+
+/* Style pour le titre principal */
+h1 {
+    text-align: center; /* Centre le titre horizontalement */
+    font-size: 2.5rem; /* Taille de police plus grande */
+    font-weight: bold; /* Met le texte en gras */
+    color: #333; /* Couleur sombre pour un bon contraste */
+    margin-bottom: 2rem; /* Ajoute un espace sous le titre */
+    text-transform: uppercase; /* Met le texte en majuscules */
+    letter-spacing: 2px; /* Ajoute un espacement entre les lettres */
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Dégradé de couleurs */
+    -webkit-background-clip: text; /* Applique le dégradé uniquement au texte */
+    -webkit-text-fill-color: transparent; /* Rend le fond du texte transparent */
+}

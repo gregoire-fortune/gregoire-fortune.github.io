@@ -10,51 +10,118 @@
   <script src="/javaScript/navbar.js"></script>
   <script src="/javaScript/footer.js"></script>
   <!-- CSS -->
-    <link rel="stylesheet" href="/CSS/style.css">
-    <link rel="stylesheet" href="/CSS/navbar.css">
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link rel="stylesheet" href="/CSS/navbar.css">
+  <link rel="stylesheet" href="/CSS/projects.css">
 </head>
 
 <body>
+  <div class="background-image"></div>
   <header class="navbar">
-    <div class="background-image"></div>
     <a href="/index.html">
       <img src="/images/hardware_chip_icon_234120.ico" alt="Logo">
     </a>
     <div id="navbar"></div>
   </header>
-  <script src="/javaScript/navbar_hidden.js"></script>  
+  <script src="/javaScript/navbar_hidden.js"></script>
   <main>
     <h1>Mes Projets</h1>
     <article>
       <h2>Projet Universitaire</h2>
       <section>
-        <h3>Nom du projet</h3>
-        <img src="/images/projet1.jpg" alt="projet1" width="300px" height="200px">
+        <h3>CineRentPro</h3>
+        <img src="/images/cinerent.png.png" alt="cinerent">
         <h4>Contexte</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.</p>
+        <p>Dans le cadre de la SAE 1.06, il s’agissait de concevoir un site web statique visant à présenter une
+          entreprise fictive spécialisée dans un domaine donné. Le site devait fournir des informations claires sur
+          l’entreprise, son fonctionnement, ses ressources, son impact environnemental, ainsi que son positionnement
+          économique. L'entreprise choisie, CineRent Pro, propose des services de location et de reconditionnement de
+          matériel multimédia en Europe.</p>
         <h4>Objectif</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <pre>
+  Appliquer les compétences en HTML et CSS pour structurer et styliser une page web.
+
+  Savoir organiser du contenu informatif autour d’une entreprise : présentation, analyse SWOT, données économiques et environnementales.
+
+  Mettre en place une navigation claire et intuitive (barre de navigation, ancrages internes).
+
+  Respecter les principes de responsive design et d'accessibilité de base.
+
+  Valoriser un travail de groupe en répartissant les tâches (rédaction, conception graphique, codage).
+        </pre>
         <h4>Travail réalisée</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <pre>
+  Rédaction des contenus (texte de présentation, analyse SWOT, données économiques et environnementales).
+
+  Création de la structure HTML du site avec différentes sections (Introduction, Attributs, Environnement, Économie).
+
+  Mise en page avec CSS, ajout d’icônes via Font Awesome et adaptation responsive.
+
+  Insertion d’images pour illustrer les sujets (logo, data center, reconditionnement, consommation).
+
+  Construction d'une barre de navigation interactive avec ancrages internes.
+
+  Utilisation de la méthode SWOT pour une analyse stratégique de l'entreprise fictive.
+
+Travail collaboratif entre les membres du groupe : répartition des rôles (code, rédaction, design).
+</pre>
         <h4>Résultat</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Le projet a abouti à un site vitrine complet, fonctionnel et structuré. Il reflète de manière professionnelle
+          l’image de l’entreprise fictive CineRent Pro et couvre toutes les dimensions attendues : technique,
+          stratégique, écologique et économique. Ce travail a permis de mettre en pratique nos acquis tout en
+          développant des compétences indispensables en développement web, gestion de contenu et communication.
+          Nous avons également approfondi nos compétences économiques, notamment dans l’analyse de la structure de
+          marché (oligopole), l’identification des acteurs économiques (offreurs, demandeurs, fournisseurs,
+          intermédiaires) et la compréhension des dynamiques concurrentielles et réglementaires liées au secteur de la
+          location. Nous avons eu la modeste note de 12/20 pour une moyenne général de 10.8/20 et une note maximal de
+          14.5/20</p>
       </section>
+      <br>
       <h2>Projet Personnel</h2>
       <section>
-        <h3>Nom du projet</h3>
-        <img src="/images/projet2.jpg" alt="projet2" width="300px" height="200px">
+        <h3>Gen3DMap</h3>
+        <img src="/images/map.png" alt="projet2">
         <h4>Contexte</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua.</p>
+        <p>La création manuelle de cartes 3D pour les jeux vidéo ou simulateurs est une tâche longue, coûteuse et
+          souvent répétitive. Les développeurs cherchent des solutions pour automatiser cette génération tout en
+          conservant diversité, jouabilité et cohérence visuelle. L’intelligence artificielle, notamment les réseaux de
+          neurones génératifs (GANs, auto-encodeurs, etc.) ou l’apprentissage par renforcement, permet aujourd’hui de
+          concevoir des environnements variés et crédibles à partir de données existantes ou de règles.</p>
         <h4>Objectif</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <h4>Travail réalisée</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        <h4>Résultat</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Développer une IA capable de générer automatiquement des maps 3D aléatoires et jouables, avec des paramètres
+          de personnalisation, pour une intégration facile dans des moteurs de jeu comme Unity ou Unreal Engine.</p>
+        <h4>Travail réalisée et en cours</h4>
+        <pre>
+1. Recherche et analyse
+  Étude des méthodes existantes (bruit de Perlin, Voronoï, GANs 3D, L-systems, etc.).
+
+  Revue des moteurs de génération procédurale dans les jeux (Minecraft, No Man’s Sky...).
+
+2. Préparation des données
+  Collecte de maps existantes (terrains, villes, donjons).
+
+  Création d’un dataset 3D (voxels, maillages, heightmaps).
+
+  Annotation des zones importantes (e.g., zones accessibles, points d’intérêt).
+
+3. Modélisation IA
+  Développement d’un modèle génératif :
+
+  Soit via GAN 3D (pour générer un voxel ou heightmap directement).
+
+  Soit via génération procédurale améliorée par apprentissage.
+
+  Ajout de paramètres de contrôle (densité, biomes, topographie).
+
+4. Visualisation et intégration
+  Génération de la carte en format utilisable dans Unity (mesh ou terrain heightmap).
+
+  Affichage temps réel avec caméra de navigation.
+
+  Ajout d’une interface simple pour tester différents paramètres.
+        </pre>
   </main>
-  
+
   <footer>
     <div id="footer"></div>
   </footer>

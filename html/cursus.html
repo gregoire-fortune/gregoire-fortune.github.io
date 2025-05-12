@@ -12,6 +12,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/cursus.css">
 </head>
 
 <body>
@@ -25,22 +26,26 @@
     <script src="/javaScript/navbar_hidden.js"></script>    
     <main>
         <h1>Cursus</h1>
-        <section>
-            <h2>2024 - 2027 : IUT d'Informatique d'Aubière <span></span></h2>
-            <img src="/images/iut_info.png" alt="logo IUT" width="456"></img>
-            <p>1ère année en cours</p>
-        </section>
-        <section>
-            <h2>2022 - 2024 : Lycée René Descartes</h2>
-            <img src="/images/lycee_descartes.png" alt="logo Descartes" width="456"></img>
-            <p>Obtention du Baccalauréat série Générale avec mention<br>
-                <span>Spécialités :</span> Mathématiques et Physique-Chimie<br>
-                <span>Option :</span> Mathématiques expertes
-            </p>
-        </section>
+        <div class="timeline">
+            <div class="timeline-item left">
+                <div class="content">
+                    <h2>2024 - 2027 : IUT d'Informatique d'Aubière</h2>
+                    <img src="/images/iut_info.png" alt="logo IUT" width="200">
+                    <p>1ère année en cours</p>
+                </div>
+            </div>
+            <div class="timeline-item right">
+                <div class="content">
+                    <h2>2022 - 2024 : Lycée René Descartes</h2>
+                    <img src="/images/lycee_descartes.png" alt="logo Descartes" width="200">
+                    <p>Obtention du Baccalauréat série Générale avec mention<br>
+                        <span>Spécialités :</span> Mathématiques et Physique-Chimie<br>
+                        <span>Option :</span> Mathématiques expertes
+                    </p>
+                </div>
+            </div>
+        </div>
     </main>
-    
-    
     <footer>
         <div id="footer"></div>
     </footer>

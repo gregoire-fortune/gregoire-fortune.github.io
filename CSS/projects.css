@@ -1,0 +1,70 @@
+/* Style général pour les articles */
+article {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Style pour chaque projet (section) */
+article section {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  background-color: rgba(46, 43, 43, 0.8); /* Fond sombre avec opacité */
+  color: #fff; /* Texte en blanc pour contraste */
+}
+
+/* Style pour les titres */
+article section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #fff; /* Texte en blanc */
+}
+
+/* Assurez-vous que les titres <h4> sont bien visibles */
+article section h4 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ddd; /* Texte légèrement plus clair */
+  font-weight: bold;
+}
+
+/* Style pour les images */
+article section img {
+  display: block;
+  max-width: 100%;
+  height: 30vh; /* Taille appropriée en vh */
+  object-fit: cover;
+  margin: 1rem 0;
+  border-radius: 4px;
+}
+
+/* Style pour les paragraphes */
+article section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc; /* Texte clair pour lisibilité */
+  margin-bottom: 1rem;
+}
+
+/* Style pour les blocs <pre> */
+article section pre {
+  background-color: rgba(255, 255, 255, 0.1); /* Fond clair avec opacité */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Bordure subtile */
+  border-radius: 4px;
+  padding: 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  overflow: hidden;
+  color: #eee; /* Texte clair */
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Ajout d'un espace entre les sections */
+article section + section {
+  margin-top: 2rem;
+}
