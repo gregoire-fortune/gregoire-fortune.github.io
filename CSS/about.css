@@ -1,53 +1,44 @@
-/* Style général */
-body {
-    font-family: 'Arial', sans-serif;
-    color: #fff; /* Texte blanc */
-    line-height: 1.6;
-    background-color: #1e1e2f; /* Fond sombre agréable pour les yeux */
-    margin: 0;
-    padding: 0;
+/* Mise en page principale */
+main {
+    max-width: 1200px;
+    margin: 17.18vh auto 1vh auto;
+    padding: 2rem 1rem;
+    border-radius: 3%;
 }
 
-/* Section principale fusionnée */
-.about-me {
-    margin: 2rem auto;
-    padding: 2rem;
-    max-width: 800px;
-    background: rgba(50, 50, 53, 0.9); /* Fond sombre avec opacité */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+/* Bloc principal "À propos de moi" + "Un peu plus sur moi" */
+.about-block {
+    background: linear-gradient(135deg, rgba(30, 30, 40, 0.92), rgba(20, 20, 30, 0.92));
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2.5rem 2rem 2rem 2rem;
+    max-width: 100%;
+    margin: 0 auto 2.5rem auto;
 }
 
-/* Titre principal */
-h1 {
+.about-block h1 {
     text-align: center;
-    font-size: 2.5rem;
-    color: #fff; /* Texte blanc */
-    margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Sous-titres */
-h2 {
-    font-size: 2rem;
-    color: #fff; /* Texte blanc */
-    margin-bottom: 1rem;
-}
-
-/* Contenu de la section fusionnée */
 .about-content {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .about-content .text {
-    flex: 1;
-    text-align: left;
-    color: #fff; /* Texte blanc */
+    flex: 2;
+    font-size: 1.12rem;
+    color: #fff;
+    text-align: justify;
 }
 
 .about-content .image {
@@ -56,66 +47,131 @@ h2 {
 }
 
 .about-content .image img {
-    max-width: 200px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    max-width: 220px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Liste des compétences */
-.skills-list {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+.about-content .image img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+}
+
+/* Bloc "Un peu plus sur moi" */
+.more-about {
+    background: transparent;
+    margin: 0;
     padding: 0;
+    margin-bottom: 2.5rem; /* Ajoute un espace plus large sous le texte */
 }
 
-.skills-list li img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
+.more-about h2 {
+    font-size: 2.2rem;
+    color: #6a9ff8;
+    border-bottom: 2px solid #6a9ff8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.skills-list li img:hover {
-    transform: scale(1.1);
+.more-about p {
+    color: #d1d1d1;
+    font-size: 1.08rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
 }
 
-/* Bandeau de photos défilantes */
+/* Carrousel juste sous "Un peu plus sur moi" (plus grand et centré verticalement) */
 .photo-carousel {
     position: relative;
-    overflow: hidden; /* Cache les images qui sortent du cadre */
+    overflow: hidden;
     width: 100%;
-    height: 25vh; /* Hauteur du carrousel */
-    background-color: rgba(50, 50, 53, 0.9); /* Fond sombre */
+    max-width: 100%;
+    height: 320px; /* Hauteur agrandie */
+    background-color: rgba(50, 50, 53, 0.9);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-
+    border-radius: 0 0 18px 18px;
+    margin: 2.5rem auto 2.5rem auto; /* Espace égal au-dessus et en dessous */
+    display: flex;
+    align-items: center;
 }
 
 .carousel-track {
     display: flex;
-    gap: 1rem; /* Espacement entre les images */
-    animation: scroll-alternate 20s linear infinite; /* Animation pour le défilement dans les deux sens */
+    gap: 2.5rem;
+    animation: scroll-alternate 18s linear infinite;
+    align-items: center;
+    height: 100%;
 }
 
 .carousel-track img {
-    flex: 0 0 auto; /* Les images ne rétrécissent ni ne s'étendent */
+    flex: 0 0 auto;
     width: auto;
-    height: 25vh; /* Les images occupent toute la hauteur du carrousel */
-    object-fit: cover; /* Ajuste l'image pour qu'elle remplisse son conteneur sans déformation */
-    border-radius: 10px; /* Coins arrondis */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Ombre esthétique */
+    height: 270px; /* Hauteur agrandie */
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carousel-track img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
 }
 
 /* Animation pour le défilement dans les deux sens */
 @keyframes scroll-alternate {
     0% {
-        transform: translateX(0); /* Position de départ */
+        transform: translateX(1%);
     }
     50% {
-        transform: translateX(-50%); /* Milieu du défilement */
+        transform: translateX(-40%);
     }
     100% {
-        transform: translateX(0); /* Retour à la position de départ */
+        transform: translateX(0);
+    }
+}
+
+/* Pause l'animation si .paused est présent */
+.carousel-track.paused {
+    animation-play-state: paused !important;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    main {
+        padding: 1rem 0.5rem 0 0.5rem;
+    }
+    .about-block {
+        padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    }
+    .about-content {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    .about-content .image img {
+        max-width: 140px;
+        height: auto;
+    }
+    .more-about {
+        margin-bottom: 1.5rem;
+    }
+    .photo-carousel {
+        height: 160px;
+        border-radius: 0 0 12px 12px;
+        margin: 1.2rem auto 1.2rem auto;
+    }
+    .carousel-track img {
+        height: 120px;
+    }
+    .about-block h1 {
+        font-size: 2.1rem;
+    }
+    .more-about h2 {
+        font-size: 1.3rem;
     }
 }

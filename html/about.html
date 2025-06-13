@@ -71,6 +71,16 @@
     <footer>
         <div id="footer"></div>
     </footer>
+    <script>
+document.querySelectorAll('.carousel-track img').forEach(img => {
+    img.addEventListener('mouseenter', function() {
+        this.closest('.carousel-track').classList.add('paused');
+    });
+    img.addEventListener('mouseleave', function() {
+        this.closest('.carousel-track').classList.remove('paused');
+    });
+});
+</script>
 </body>
 
 </html>

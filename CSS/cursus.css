@@ -1,10 +1,30 @@
-/* Style général pour la timeline */
+/* Style général pour la page */
+main {
+    max-width: 1200px;
+    margin: 17.18vh auto 1vh auto;
+    padding: 2rem 1rem;
+    background: linear-gradient(135deg, rgba(30, 30, 40, 0.92), rgba(20, 20, 30, 0.92));
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+main h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Timeline centrale */
 .timeline {
     position: relative;
     margin: 2rem auto;
     padding: 2rem 0;
-    width: 80%;
-    max-width: 800px;
+    width: 90%;
+    max-width: 900px;
 }
 
 /* Flèche centrale */
@@ -16,29 +36,33 @@
     transform: translateX(-50%);
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid #ccc; /* Couleur de la flèche */
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 28px solid #6a9ff8;
+    z-index: 2;
 }
 
 /* Ligne centrale sous la flèche */
 .timeline::after {
     content: '';
     position: absolute;
-    top: 20px; /* Position juste sous la flèche */
+    top: 28px;
     left: 50%;
     transform: translateX(-50%);
-    width: 4px;
-    height: 100%;
-    background-color: #ccc;
+    width: 6px;
+    height: calc(100% - 28px);
+    background: linear-gradient(180deg, #6a9ff8 0%, #ccc 100%);
+    border-radius: 3px;
+    z-index: 1;
 }
 
 /* Style pour chaque élément de la timeline */
 .timeline-item {
     position: relative;
     width: 50%;
-    padding: 1rem 2rem;
+    padding: 1.5rem 2rem;
     box-sizing: border-box;
+    z-index: 2;
 }
 
 /* Contenu à gauche */
@@ -53,39 +77,103 @@
     text-align: left;
 }
 
-/* Style pour le contenu */
+/* Style du contenu de chaque étape */
 .timeline-item .content {
-    background-color: rgba(46, 43, 43, 0.8);
+    background: rgba(50, 50, 53, 0.93);
     color: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem 1.5rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.28);
+    max-width: 95%;
+    margin-bottom: 2rem;
+    border: 2px solid #6a9ff8;
+    position: relative;
+    transition: box-shadow 0.3s;
+}
+
+.timeline-item .content:hover {
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
 }
 
 /* Images dans le contenu */
 .timeline-item .content img {
     display: block;
-    margin: 0 auto 1rem;
-    max-width: 100%;
-    height: auto;
+    margin: 0.5rem auto 1rem auto;
+    max-width: 180px;
+    height: 120px;
+    object-fit: contain;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-/* Ajustement des marges pour alternance */
-.timeline-item.left .content {
-    margin-right: auto;
+.timeline-item .content img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.7);
 }
 
-.timeline-item.right .content {
-    margin-left: auto;
+/* Texte */
+.timeline-item .content p {
+    font-size: 1.08rem;
+    line-height: 1.7;
+    color: #d1d1d1;
+    margin-bottom: 0;
+    text-align: center;
 }
 
-/* Style pour le titre principal */
-h1 {
-    text-align: center; /* Centre le titre horizontalement */
-    font-size: 2.5rem; /* Taille de police plus grande */
-    font-weight: bold; /* Met le texte en gras */
-    color: #ffffff; /* Couleur sombre pour un bon contraste */
-    margin-bottom: 2rem; /* Ajoute un espace sous le titre */
-    text-transform: uppercase; /* Met le texte en majuscules */
-    letter-spacing: 2px; /* Ajoute un espacement entre les lettres */
+/* Titre de chaque étape */
+.timeline-item .content h2 {
+    font-size: 2rem;
+    color: #6a9ff8;
+    border-bottom: 2px solid #6a9ff8;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Points sur la ligne centrale */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    top: 2.5rem;
+    right: -13px;
+    width: 20px;
+    height: 20px;
+    background: #6a9ff8;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    z-index: 3;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.timeline-item.right::after {
+    left: -13px;
+    right: auto;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .timeline {
+        width: 100%;
+        padding: 1rem 0;
+    }
+    .timeline-item,
+    .timeline-item.left,
+    .timeline-item.right {
+        width: 100%;
+        left: 0;
+        text-align: center;
+        padding: 1rem 0.5rem;
+    }
+    .timeline-item .content {
+        margin: 0 auto 2rem auto;
+    }
+    .timeline-item::after,
+    .timeline-item.right::after {
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+    }
 }
