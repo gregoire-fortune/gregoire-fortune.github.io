@@ -38,6 +38,7 @@ header{
 header img{
     width: 10vh;
     height: 10vh;
+    filter: invert(100%);
 }
 
 header ul img{
@@ -45,17 +46,100 @@ header ul img{
     height: 5vh;
 }
 
-nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+header ul li span {
+    color: white; /* Change text color to white */
+    visibility: hidden; /* Hide text by default */
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+    display: block; /* Ensure proper layout */
 }
 
-nav ul li {
+header ul li:hover span {
+    visibility: visible; /* Show text on hover */
+}
+
+nav ul {
+    display: flex; /* Ensure items are displayed horizontally */
+    flex-wrap: nowrap; /* Prevent wrapping to the next line */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Align items vertically */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    padding: 10px; /* Add padding to prevent images from being cut off */
+}
+
+.nav-item {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /* Keep text below its image */
     align-items: center;
-    margin: 0 15px;
+    margin: 0 30px; /* Increase spacing between items */
+    width: 5vh; /* Set consistent width for image-text pairs */
+}
+
+.nav-item span {
+    color: white;
+    visibility: hidden; /* Hide text by default */
+    font-size: 1rem;
+    margin-top: 5px;
+    text-align: center;
+    width: 100%; /* Match text width to image width */
+    white-space: nowrap; /* Prevent text wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    opacity: 0; /* Fully transparent */
+    transform: translateY(-10px); /* Start above */
+}
+
+.nav-item:hover span {
+    visibility: visible; /* Show text below the hovered image */
+    opacity: 1; /* Fully visible */
+    transform: translateY(0); /* Reset position */
+    animation: textSlideIn 0.3s ease-out; /* Animate sliding in */
+}
+
+.nav-item img {
+    transition: transform 0.3s ease; /* Smooth lifting effect */
+    filter: invert(100%);
+    display: block; /* Ensure the image is treated as a block element */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.nav-item:hover img {
+    transform: translateY(-5px); /* Lift only the hovered image */
+}
+
+.nav-item .separator {
+    width: 0; /* Start with no width */
+    height: 1px; /* Thin line */
+    background-color: white; /* Line color */
+    margin: 5px 0; /* Add spacing above and below the line */
+    visibility: hidden; /* Hide the separator by default */
+}
+
+.nav-item:hover .separator {
+    visibility: visible; /* Show the separator on hover */
+    width: 100%; /* Expand to full width */
+    animation: separatorExpand 0.3s ease-out; /* Animate expansion */
+}
+
+@keyframes textSlideIn {
+    from {
+        transform: translateY(-10px); /* Start above */
+        opacity: 0; /* Fully transparent */
+    }
+    to {
+        transform: translateY(0); /* End at original position */
+        opacity: 1; /* Fully visible */
+    }
+}
+
+@keyframes separatorExpand {
+    from {
+        width: 0; /* Start with no width */
+    }
+    to {
+        width: 100%; /* Expand to full width */
+    }
 }
 
 main {
@@ -65,7 +149,56 @@ main {
     margin-top: 16.18vh;
 }
 
-footer{
+footer {
     background-color: #272727;
     color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.footer-content p {
+    margin: 10px 0;
+}
+
+.footer-content a {
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.download-btn {
+    background-color: #333;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.download-btn a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.download-btn:hover {
+    background-color: #555;
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Add space above the copyright text */
+}
+
+.footer-bottom p {
+    margin-top: 10px; /* Add space between the button and copyright */
 }
