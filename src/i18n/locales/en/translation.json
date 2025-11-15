@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "title": "FORTUNÉ Grégoire",
+    "home": "Home",
+    "about": "About",
+    "curriculum": "Curriculum",
+    "skills": "Skills & Qualities",
+    "projects": "Projects",
+    "hobbies": "Hobbies",
+    "contact": "Contact",
+    "resume": "Resume"
+  },
+  "theme": {
+    "light": "Light mode",
+    "dark": "Dark mode",
+    "toggle": "Toggle theme"
+  },
+  "language": {
+    "label": "Language",
+    "fr": "French",
+    "en": "English"
+  },
+  "footer": {
+    "signature": "© 2025 – Student portfolio. Built with React + Tailwind."
+  },
+  "pages": {
+    "home": {
+      "badge": "Portfolio",
+      "title": "Welcome to my digital space",
+      "description": "I’m an IT student building this portfolio to showcase my journey, projects, and personality.",
+      "firstName": "Grégoire",
+      "lastName": "Fortuné",
+      "typingPrefix": "I am",
+      "typingRoles": [
+        "a B.U.T Computer Science student",
+        "an aspiring developer",
+        "someone ambitious"
+      ],
+      "photoAlt": "Portrait of Grégoire Fortuné",
+      "arrowLabel": "Jump to About",
+      "ctaProjects": "See my projects",
+      "ctaContact": "Get in touch"
+    },
+    "about": {
+      "title": "About me",
+      "description": "A few highlights to understand who I am and what drives my work.",
+      "highlights": [
+        "Passionate about continuous learning and user experience.",
+        "Used to working in teams during my B.U.T Informatique projects.",
+        "Curious about modern web technologies (React, TypeScript, Tailwind)."
+      ]
+    },
+    "curriculum": {
+      "title": "Curriculum",
+      "description": "A quick overview of the education and experiences that shaped my path.",
+       "cta": "View more details",
+       "close": "Close",
+      "timeline": [
+        {
+          "title": "B.U.T Informatique",
+          "subtitle": "IUT – University",
+          "timeframe": "2023 - Today",
+          "description": "Programming, software architecture, databases, networking, and project management.",
+          "details": "Professional modules, tutored projects, and internships. Focus on React, Node, and object-oriented design."
+        },
+        {
+          "title": "High school – Digital major",
+          "subtitle": "General baccalaureate",
+          "timeframe": "2020 - 2023",
+          "description": "Introduction to programming fundamentals, algorithms, and scientific culture.",
+          "details": "Workshops, science clubs, early exposure to automation and algorithmic thinking."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Skills & qualities",
+      "description": "A balance of technical skills and soft skills that shape my collaborations.",
+      "sections": [
+        {
+          "title": "Tech stack",
+          "items": ["React / TypeScript", "Tailwind CSS", "Node.js", "SQL"]
+        },
+        {
+          "title": "Soft skills",
+          "items": ["Team spirit", "Curiosity", "Organization", "Communication"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projects",
+      "description": "A glimpse of the projects I’ve completed during my studies or on my own.",
+      "items": [
+        {
+          "title": "React portfolio",
+          "description": "Building a multi-page website with i18n, dark mode, and Tailwind.",
+          "stack": "React · TypeScript · Tailwind"
+        },
+        {
+          "title": "Management app",
+          "description": "Designing a CRUD application backed by a Node API.",
+          "stack": "Node · Express · PostgreSQL"
+        }
+      ]
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "description": "What keeps me balanced outside the screen.",
+      "items": [
+        {
+          "title": "Tech watch",
+          "description": "Reading articles and testing new libraries."
+        },
+        {
+          "title": "Sports",
+          "description": "Running and fitness to stay energized."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Want to collaborate or learn more? Drop me a line.",
+      "form": {
+        "name": "Name",
+        "namePlaceholder": "Your full name",
+        "email": "Email",
+        "emailPlaceholder": "name@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Describe your project…",
+        "cta": "Send"
+      },
+      "cvHint": "You can also download my resume below or from the dedicated page."
+    },
+    "resume": {
+      "title": "Resume",
+      "description": "Download my resume or embed it directly on this page.",
+      "instructions": "Add here a link to a PDF or an embed from Google Drive/Canva.",
+      "downloadCta": "Download my resume"
+    }
+  }
+}

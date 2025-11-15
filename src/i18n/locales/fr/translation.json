@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "title": "FORTUNÉ Grégoire",
+    "home": "Accueil",
+    "about": "À propos",
+    "curriculum": "Cursus",
+    "skills": "Compétences & Qualités",
+    "projects": "Projets",
+    "hobbies": "Loisirs",
+    "contact": "Contact",
+    "resume": "CV"
+  },
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "toggle": "Basculer le thème"
+  },
+  "language": {
+    "label": "Langue",
+    "fr": "Français",
+    "en": "Anglais"
+  },
+  "footer": {
+    "signature": "© 2025 – Portfolio étudiant. Construit avec React + Tailwind."
+  },
+  "pages": {
+    "home": {
+      "badge": "Portfolio",
+      "title": "Bienvenue sur mon espace numérique",
+      "description": "Je suis étudiant en informatique et je construis ce portfolio pour présenter mon parcours, mes projets et ma personnalité.",
+      "firstName": "Grégoire",
+      "lastName": "Fortuné",
+      "typingPrefix": "Je suis",
+      "typingRoles": [
+        "étudiant en B.U.T Informatique",
+        "un futur développeur",
+        "quelqu'un d'ambitieux"
+      ],
+      "photoAlt": "Portrait de Grégoire Fortuné",
+      "arrowLabel": "Aller vers À propos",
+      "ctaProjects": "Voir mes projets",
+      "ctaContact": "Me contacter"
+    },
+    "about": {
+      "title": "À propos de moi",
+      "description": "Voici quelques repères pour mieux comprendre qui je suis et ce qui motive ma progression en développement.",
+      "highlights": [
+        "Passion pour l’apprentissage continu et l’amélioration de l’expérience utilisateur.",
+        "Habitude de travailler en équipe dans le cadre des projets du B.U.T Informatique.",
+        "Intérêt pour les technologies web modernes (React, TypeScript, Tailwind)."
+      ]
+    },
+    "curriculum": {
+      "title": "Mon cursus",
+      "description": "Un aperçu des formations et expériences qui structurent mon parcours académique.",
+      "cta": "Voir les détails",
+      "close": "Fermer",
+      "timeline": [
+        {
+          "title": "B.U.T Informatique",
+          "subtitle": "IUT – Université",
+          "timeframe": "2023 - Aujourd’hui",
+          "description": "Programmation, architecture logicielle, bases de données, réseaux et gestion de projet.",
+          "details": "Modules professionnels, projets tuteurés, intervention en entreprise. Focus sur React, Node et la conception orientée objet."
+        },
+        {
+          "title": "Lycée – Spécialité Numérique",
+          "subtitle": "Baccalauréat général",
+          "timeframe": "2020 - 2023",
+          "description": "Découverte des bases de la programmation, algorithmique et culture scientifique.",
+          "details": "Ateliers numériques, clubs scientifiques, premières notions d’algorithmique et d’automatisation."
+        }
+      ]
+    },
+    "skills": {
+      "title": "Compétences & qualités",
+      "description": "Un mélange de compétences techniques et humaines qui guident ma façon de travailler.",
+      "sections": [
+        {
+          "title": "Stack technique",
+          "items": ["React / TypeScript", "Tailwind CSS", "Node.js", "SQL"]
+        },
+        {
+          "title": "Qualités humaines",
+          "items": ["Esprit d’équipe", "Curiosité", "Organisation", "Communication"]
+        }
+      ]
+    },
+    "projects": {
+      "title": "Projets",
+      "description": "Un extrait des projets réalisés durant mes études ou en autonomie.",
+      "items": [
+        {
+          "title": "Portfolio React",
+          "description": "Mise en place d’un site multi-pages avec i18n, mode sombre et Tailwind.",
+          "stack": "React · TypeScript · Tailwind"
+        },
+        {
+          "title": "Application de gestion",
+          "description": "Conception d’une application CRUD avec un backend Node.",
+          "stack": "Node · Express · PostgreSQL"
+        }
+      ]
+    },
+    "hobbies": {
+      "title": "Loisirs",
+      "description": "Ce qui me permet de garder l’équilibre en dehors de l’écran.",
+      "items": [
+        {
+          "title": "Veille technologique",
+          "description": "Lecture d’articles et tests de nouvelles librairies."
+        },
+        {
+          "title": "Sport",
+          "description": "Course et fitness pour rester en forme."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Envie de collaborer ou d’en savoir plus ? Laissez-moi un message.",
+      "form": {
+        "name": "Nom",
+        "namePlaceholder": "Votre nom complet",
+        "email": "Email",
+        "emailPlaceholder": "nom@example.com",
+        "message": "Message",
+        "messagePlaceholder": "Décrivez votre besoin…",
+        "cta": "Envoyer"
+      },
+      "cvHint": "Vous pourrez également télécharger mon CV ci-dessous ou sur la page dédiée."
+    },
+    "resume": {
+      "title": "Mon CV",
+      "description": "Téléchargez mon CV ou intégrez-le directement dans cette page.",
+      "instructions": "Ajoutez ici un lien vers un PDF ou un embed issu de Google Drive/Canva.",
+      "downloadCta": "Télécharger mon CV"
+    }
+  }
+}
