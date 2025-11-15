@@ -1,3 +1,4 @@
+import type { ComponentType } from "react";
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -6,7 +7,7 @@ type NavItem = {
   to: string;
   labelKey: string;
   end?: boolean;
-  icon: (props: IconProps) => JSX.Element;
+  icon: ComponentType<IconProps>;
 };
 
 const HomeIcon = ({ className }: IconProps) => (
