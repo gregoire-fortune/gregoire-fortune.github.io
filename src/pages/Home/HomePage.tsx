@@ -64,10 +64,11 @@ export const HomePage = () => {
 
   return (
     <section className="flex min-h-[calc(100vh-220px)] items-center">
-      <div className="grid w-full gap-10 lg:grid-cols-2 lg:items-center">
-      <div className="flex flex-col gap-6">
+      <div className="grid w-full gap-10 lg:grid-cols-[minmax(0,_2fr)_minmax(0,_1fr)] lg:items-center">
+      <div className="flex justify-center lg:justify-start">
+        <div className="flex w-full flex-col gap-6 px-4 text-center sm:px-6 lg:px-10 lg:text-left">
         <p className="text-sm uppercase tracking-[0.35em] text-brand">{t("pages.home.badge")}</p>
-        <h1 className="text-5xl font-semibold leading-tight md:text-6xl">
+        <h1 className="font-semibold leading-[1.05] text-[clamp(3.5rem,10vw,8rem)]">
           <span className="block">{t("pages.home.firstName")}</span>
           <span className="block text-brand">{t("pages.home.lastName")}</span>
         </h1>
@@ -115,16 +116,19 @@ export const HomePage = () => {
             {t("pages.home.ctaContact")}
           </Link>
         </div>
+        </div>
       </div>
 
-      <div className="relative flex justify-center">
-        <div className="absolute inset-8 rounded-full bg-brand/20 blur-3xl dark:bg-brand/30" aria-hidden />
-        <img
-          src={heroPortrait}
-          alt={t("pages.home.photoAlt") ?? "Portrait"}
-          loading="lazy"
-          className="relative z-10 aspect-square w-full max-w-[20rem] rounded-full border border-white/50 object-cover shadow-2xl shadow-brand/20 dark:border-slate-800"
-        />
+      <div className="flex justify-center lg:justify-end">
+        <div className="relative flex w-full justify-center px-4 sm:px-6 lg:px-8">
+          <div className="absolute inset-8 rounded-full bg-brand/20 blur-3xl dark:bg-brand/30" aria-hidden />
+          <img
+            src={heroPortrait}
+            alt={t("pages.home.photoAlt") ?? "Portrait"}
+            loading="lazy"
+            className="relative z-10 aspect-square w-full max-w-[20rem] rounded-full border border-white/50 object-cover shadow-2xl shadow-brand/20 dark:border-slate-800"
+          />
+        </div>
       </div>
       </div>
     </section>

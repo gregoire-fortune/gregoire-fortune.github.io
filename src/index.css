@@ -20,3 +20,52 @@ body {
   background-color: #020617;
   color: #e2e8f0;
 }
+
+@keyframes about-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.about-marquee {
+  position: relative;
+  overflow: hidden;
+  padding: 1rem 0;
+}
+
+.about-marquee::after,
+.about-marquee::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3.5rem;
+  pointer-events: none;
+  background-image: linear-gradient(to right, rgba(15, 23, 42, 0.85), transparent);
+}
+
+.about-marquee::after {
+  right: 0;
+  transform: rotate(180deg);
+}
+
+.about-marquee::before {
+  left: 0;
+}
+
+.about-marquee-track {
+  display: flex;
+  gap: 1.25rem;
+  width: max-content;
+  animation: about-marquee 34s linear infinite;
+}
+.about-marquee-track > * {
+  flex-shrink: 0;
+}
+
+.about-marquee:hover .about-marquee-track {
+  animation-play-state: paused;
+}

@@ -42,13 +42,56 @@
       "ctaContact": "Get in touch"
     },
     "about": {
+      "badge": "Journey",
       "title": "About me",
+      "lead": "I’m Grégoire Fortuné, currently studying computer science at the IUT of Aubière (France).",
       "description": "A few highlights to understand who I am and what drives my work.",
-      "highlights": [
-        "Passionate about continuous learning and user experience.",
-        "Used to working in teams during my B.U.T Informatique projects.",
-        "Curious about modern web technologies (React, TypeScript, Tailwind)."
-      ]
+      "intro": {
+        "paragraphs": [
+          "I’m in my first year of the B.U.T Informatique program where I build strong fundamentals in algorithms, web development, and software design.",
+          "The curriculum blends core CS topics (programming, databases, networking) with transversal skills such as communication, project management, and finance, giving me a broader view of the job.",
+          "I’m looking for a 10-week internship starting May 2026 to apply this knowledge within a professional team and keep learning by doing."
+        ]
+      },
+      "photoAlt": "Portrait of Grégoire Fortuné in a garden",
+      "card": {
+        "title": "Right now",
+        "subtitle": "B.U.T Informatique student",
+        "description": "IUT of Aubière – Year 1"
+      },
+      "more": {
+        "title": "A bit more about me",
+        "paragraphs": [
+          "I’m ambitious and keep pushing myself with harder challenges. Curiosity drives me to explore new topics and learn fresh skills whenever I can.",
+          "Sports help me stay balanced: handball, volleyball, and climbing teach me teamwork, resilience, and focus—values I bring to every project."
+        ]
+      },
+      "traits": [
+        {
+          "title": "Ambition",
+          "description": "Always looking to level up and tackle more complex missions."
+        },
+        {
+          "title": "Team mindset",
+          "description": "Comfortable collaborating, both in class projects and on the court."
+        },
+        {
+          "title": "Curiosity",
+          "description": "Regularly experimenting with modern web tools and stacks."
+        }
+      ],
+      "gallery": {
+        "title": "Snapshots that define me",
+        "items": {
+          "hand": "Handball – teamwork",
+          "puyDeDome": "Puy de Dôme – my roots",
+          "ambition": "Ambition and goals",
+          "idea": "Ideas and creativity",
+          "fractal": "Logic and precision",
+          "volley": "Volleyball – coordination",
+          "golf": "Golf – patience"
+        }
+      }
     },
     "curriculum": {
       "title": "Curriculum",

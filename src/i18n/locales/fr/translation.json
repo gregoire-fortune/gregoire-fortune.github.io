@@ -42,13 +42,56 @@
       "ctaContact": "Me contacter"
     },
     "about": {
+      "badge": "Parcours",
       "title": "À propos de moi",
+      "lead": "Je m’appelle Grégoire Fortuné et j’étudie l’informatique à l’IUT d’Aubière (63).",
       "description": "Voici quelques repères pour mieux comprendre qui je suis et ce qui motive ma progression en développement.",
-      "highlights": [
-        "Passion pour l’apprentissage continu et l’amélioration de l’expérience utilisateur.",
-        "Habitude de travailler en équipe dans le cadre des projets du B.U.T Informatique.",
-        "Intérêt pour les technologies web modernes (React, TypeScript, Tailwind)."
-      ]
+      "intro": {
+        "paragraphs": [
+          "Je suis actuellement en 1ère année de B.U.T Informatique. C’est là que je construis les bases solides nécessaires pour appréhender l’algorithmie, le développement web et la conception d’applications.",
+          "Le cursus mêle informatique pure (programmation, bases de données, réseaux) et compétences transverses comme la communication, la gestion de projet ou la finance, ce qui me permet d’avoir une vision complète du métier.",
+          "Je suis à la recherche d’un stage de 10 semaines à partir de mai 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
+        ]
+      },
+      "photoAlt": "Photo de Grégoire Fortuné avec un arrière-plan fleuri",
+      "card": {
+        "title": "Actuellement",
+        "subtitle": "Étudiant en B.U.T Informatique",
+        "description": "IUT d’Aubière – 1ère année"
+      },
+      "more": {
+        "title": "Un peu plus sur moi",
+        "paragraphs": [
+          "Je suis quelqu’un d’ambitieux qui cherche toujours à relever des défis plus exigeants. Ma curiosité me pousse à explorer de nouveaux sujets et à apprendre de nouvelles compétences dès que l’occasion se présente.",
+          "Le sport occupe une place importante : handball, volley ou escalade m’apprennent l’entraide, la rigueur et le dépassement. Ces valeurs me suivent dans ma vie étudiante et dans les projets que j’entreprends."
+        ]
+      },
+      "traits": [
+        {
+          "title": "Ambition",
+          "description": "Objectif : progresser à chaque projet et viser des missions plus complexes."
+        },
+        {
+          "title": "Collectif",
+          "description": "Habitué aux projets d’équipe du B.U.T comme aux sports co."
+        },
+        {
+          "title": "Curiosité",
+          "description": "Veille régulière sur les technos web modernes et envie d’expérimenter."
+        }
+      ],
+      "gallery": {
+        "title": "Instantanés qui me définissent",
+        "items": {
+          "hand": "Handball – esprit d’équipe",
+          "puyDeDome": "Puy de Dôme – mes racines",
+          "ambition": "Ambition et dépassement",
+          "idea": "Créativité et idées",
+          "fractal": "Logique et rigueur",
+          "volley": "Volley – coordination",
+          "golf": "Golf – patience et précision"
+        }
+      }
     },
     "curriculum": {
       "title": "Mon cursus",

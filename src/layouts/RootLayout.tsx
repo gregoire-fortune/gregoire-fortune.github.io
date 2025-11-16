@@ -41,7 +41,7 @@ export const RootLayout = () => {
         </div>
       </header>
 
-      <main className="mx-auto flex-1 max-w-5xl px-4 py-10">
+      <main className="flex-1 w-full px-6 py-10 lg:px-12">
         <Outlet />
       </main>
 
