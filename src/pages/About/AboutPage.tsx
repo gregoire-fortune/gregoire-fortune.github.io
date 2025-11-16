@@ -69,7 +69,7 @@ export const AboutPage = () => {
                 src={portraitFlower}
                 alt={t("pages.about.photoAlt") ?? "Portrait"}
                 loading="lazy"
-                className="h-full w-full rounded-[32px] object-cover"
+                className="w-full rounded-[32px] object-cover"
               />
               <div className="mt-4 rounded-3xl bg-white/15 p-4 text-sm text-white">
                 <p className="text-xs uppercase tracking-[0.35em] text-brand/90">{t("pages.about.card.title")}</p>
@@ -105,7 +105,6 @@ export const AboutPage = () => {
       </div>
 
       <div className="overflow-hidden rounded-[32px] border border-slate-200/60 bg-slate-950/80 text-white shadow-2xl shadow-brand/20 dark:border-slate-800">
-        <div className="border-b border-white/10 px-6 py-4 text-sm uppercase tracking-[0.4em] text-brand">{t("pages.about.gallery.title")}</div>
         <div className="px-0 py-6 sm:px-6">
           <div className="about-marquee">
             <div className="about-marquee-track">

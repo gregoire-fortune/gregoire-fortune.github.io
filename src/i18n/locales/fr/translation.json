@@ -63,6 +63,7 @@
         "title": "Un peu plus sur moi",
         "paragraphs": [
           "Je suis quelqu’un d’ambitieux qui cherche toujours à relever des défis plus exigeants. Ma curiosité me pousse à explorer de nouveaux sujets et à apprendre de nouvelles compétences dès que l’occasion se présente.",
+          "Je vis aujourd’hui en Auvergne pour mes études, même si mes origines sont ailleurs. Ce changement m’a appris l’adaptabilité et l’ouverture à de nouveaux environnements.",
           "Le sport occupe une place importante : handball, volley ou escalade m’apprennent l’entraide, la rigueur et le dépassement. Ces valeurs me suivent dans ma vie étudiante et dans les projets que j’entreprends."
         ]
       },
@@ -84,10 +85,10 @@
         "title": "Instantanés qui me définissent",
         "items": {
           "hand": "Handball – esprit d’équipe",
-          "puyDeDome": "Puy de Dôme – mes racines",
+          "puyDeDome": "Puy de Dôme – mon terrain d’études",
           "ambition": "Ambition et dépassement",
           "idea": "Créativité et idées",
-          "fractal": "Logique et rigueur",
+          "fractal": "Mon PC – mon setup",
           "volley": "Volley – coordination",
           "golf": "Golf – patience et précision"
         }

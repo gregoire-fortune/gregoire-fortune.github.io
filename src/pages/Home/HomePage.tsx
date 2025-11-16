@@ -2,7 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
-import heroPortrait from "../../assets/profile-placeholder.svg";
+import heroPortrait from "../../assets/moi_vangogh.jpg";
 
 export const HomePage = () => {
   const { t, i18n } = useTranslation();
@@ -120,13 +120,13 @@ export const HomePage = () => {
       </div>
 
       <div className="flex justify-center lg:justify-end">
-        <div className="relative flex w-full justify-center px-4 sm:px-6 lg:px-8">
-          <div className="absolute inset-8 rounded-full bg-brand/20 blur-3xl dark:bg-brand/30" aria-hidden />
+        <div className="relative flex w-full justify-center px-6 sm:px-10">
+          <div className="absolute inset-10 rounded-full bg-brand/25 blur-3xl opacity-90 dark:bg-brand/40" aria-hidden />
           <img
             src={heroPortrait}
             alt={t("pages.home.photoAlt") ?? "Portrait"}
             loading="lazy"
-            className="relative z-10 aspect-square w-full max-w-[20rem] rounded-full border border-white/50 object-cover shadow-2xl shadow-brand/20 dark:border-slate-800"
+            className="relative z-10 aspect-square w-full max-w-[26rem] rounded-full border border-white/60 object-cover shadow-[0_30px_120px_rgba(15,23,42,0.3)] dark:border-slate-800"
           />
         </div>
       </div>

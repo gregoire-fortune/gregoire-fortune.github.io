@@ -63,6 +63,7 @@
         "title": "A bit more about me",
         "paragraphs": [
           "I’m ambitious and keep pushing myself with harder challenges. Curiosity drives me to explore new topics and learn fresh skills whenever I can.",
+          "I currently live in Auvergne for my studies even though my hometown is elsewhere, which taught me adaptability and openness to new environments.",
           "Sports help me stay balanced: handball, volleyball, and climbing teach me teamwork, resilience, and focus—values I bring to every project."
         ]
       },
@@ -84,10 +85,10 @@
         "title": "Snapshots that define me",
         "items": {
           "hand": "Handball – teamwork",
-          "puyDeDome": "Puy de Dôme – my roots",
+          "puyDeDome": "Puy de Dôme – where I study",
           "ambition": "Ambition and goals",
           "idea": "Ideas and creativity",
-          "fractal": "Logic and precision",
+          "fractal": "My actual PC setup",
           "volley": "Volleyball – coordination",
           "golf": "Golf – patience"
         }

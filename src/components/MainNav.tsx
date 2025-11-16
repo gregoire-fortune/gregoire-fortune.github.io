@@ -102,7 +102,7 @@ export const MainNav = () => {
                 className={`flex h-12 w-12 items-center justify-center rounded-2xl border text-lg transition-all duration-200 ${
                   isActive
                     ? "border-brand bg-brand/15 text-brand shadow-lg shadow-brand/20"
-                    : "border-transparent bg-white/80 text-slate-500 shadow-sm transition group-hover:-translate-y-1 group-hover:border-brand/40 group-hover:text-brand dark:bg-slate-900/40 dark:text-slate-300"
+                    : "border-transparent bg-white/60 text-slate-500 shadow-sm transition group-hover:-translate-y-1 group-hover:border-brand/40 group-hover:text-brand dark:bg-slate-900/25 dark:text-slate-300"
                 }`}
               >
                 <link.icon className="h-5 w-5" />
