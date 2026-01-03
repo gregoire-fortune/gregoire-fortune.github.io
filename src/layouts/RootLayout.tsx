@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { Link, Outlet, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
@@ -16,6 +17,33 @@ export const RootLayout = () => {
   const location = useLocation();
   const currentNav = NAV_LINKS.find((link) => matchesRoute(location.pathname, link.to, link.end));
   const currentPageTitle = currentNav ? t(currentNav.labelKey) : t("nav.title");
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mediaQuery = window.matchMedia("(max-width: 768px)");
+    const handleChange = () => setIsMobile(mediaQuery.matches);
+
+    handleChange();
+    mediaQuery.addEventListener("change", handleChange);
+
+    return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
+  if (isMobile) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-black px-6 text-slate-100">
+        <div className="max-w-md space-y-4 text-center">
+          <p className="text-xs uppercase tracking-[0.35em] text-brand/80">{t("nav.title")}</p>
+          <h1 className="text-2xl font-semibold text-white">{t("mobile.title")}</h1>
+          <p className="text-sm leading-relaxed text-slate-300">{t("mobile.message")}</p>
+          <p className="text-xs text-slate-500">{t("mobile.cta")}</p>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="flex min-h-screen flex-col text-slate-900 transition-colors dark:text-slate-100">

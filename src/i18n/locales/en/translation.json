@@ -23,6 +23,11 @@
   "footer": {
     "signature": "© 2025 – Student portfolio. Built with React + Tailwind."
   },
+  "mobile": {
+    "title": "Mobile view not available",
+    "message": "This portfolio is not yet optimized for phone screens. Please visit from a computer to see the full experience.",
+    "cta": "Come back later"
+  },
   "pages": {
     "home": {
       "badge": "Portfolio",
@@ -96,23 +101,35 @@
     },
     "curriculum": {
       "title": "Curriculum",
-      "description": "A quick overview of the education and experiences that shaped my path.",
-       "cta": "View more details",
-       "close": "Close",
+      "description": "Mirrors the legacy Cursus page: the same milestones with refreshed visuals.",
+      "cta": "View more details",
+      "close": "Close",
       "timeline": [
         {
           "title": "B.U.T Informatique",
-          "subtitle": "IUT – University",
-          "timeframe": "2023 - Today",
-          "description": "Programming, software architecture, databases, networking, and project management.",
-          "details": "Professional modules, tutored projects, and internships. Focus on React, Node, and object-oriented design."
+          "subtitle": "IUT of Aubière – Université Clermont Auvergne",
+          "timeframe": "2024 — 2027",
+          "description": "Year 1 in progress with a hands-on program mixing theory and real projects.",
+          "details": [
+            "Focus on programming, databases, networking, and system administration.",
+            "Goal: build solid technical foundations plus teamwork and project methodology."
+          ],
+          "mediaKey": "iut",
+          "imageAlt": "IUT Informatique logo",
+          "highlight": "B.U.T track – class of 2024-2027"
         },
         {
-          "title": "High school – Digital major",
+          "title": "René Descartes High School",
           "subtitle": "General baccalaureate",
-          "timeframe": "2020 - 2023",
-          "description": "Introduction to programming fundamentals, algorithms, and scientific culture.",
-          "details": "Workshops, science clubs, early exposure to automation and algorithmic thinking."
+          "timeframe": "2022 — 2024",
+          "description": "Graduated with honors, majoring in Mathematics and Physics-Chemistry.",
+          "details": [
+            "Took the Advanced Math option to push analytical thinking further.",
+            "Developed rigor, logical mindset, and curiosity through labs and science projects."
+          ],
+          "mediaKey": "lycee",
+          "imageAlt": "René Descartes high school logo",
+          "highlight": "Scientific foundations & work methods"
         }
       ]
     },
@@ -132,37 +149,189 @@
     },
     "projects": {
       "title": "Projects",
-      "description": "A glimpse of the projects I’ve completed during my studies or on my own.",
-      "items": [
+      "description": "Same storytelling as on the main branch: one academic project and one personal side project with detailed notes.",
+      "sections": [
         {
-          "title": "React portfolio",
-          "description": "Building a multi-page website with i18n, dark mode, and Tailwind.",
-          "stack": "React · TypeScript · Tailwind"
+          "title": "Academic project",
+          "description": "SAE 1.06 – Static showcase website",
+          "items": [
+            {
+              "title": "CineRentPro",
+              "badge": "Team work · HTML/CSS",
+              "summary": "Showcase site for a fictional company renting and refurbishing multimedia equipment.",
+              "mediaKey": "cinerent",
+              "segments": [
+                {
+                  "title": "Context",
+                  "type": "paragraph",
+                  "text": "For SAE 1.06 we had to present CineRent Pro, a fictional company operating across Europe with a focus on renting and refurbishing gear."
+                },
+                {
+                  "title": "Goals",
+                  "type": "list",
+                  "items": [
+                    "Apply core HTML/CSS to structure a multi-section website.",
+                    "Organize information: company intro, SWOT analysis, economic and environmental data.",
+                    "Build a clear navigation with anchor links and responsive design.",
+                    "Showcase team collaboration by splitting content writing, design, and integration."
+                  ]
+                },
+                {
+                  "title": "What I delivered",
+                  "type": "list",
+                  "items": [
+                    "Wrote the copy: presentation, SWOT, economic and ecological metrics.",
+                    "Structured the HTML sections (Introduction, Assets, Environment, Economy).",
+                    "Styled the pages with CSS, Font Awesome, and responsive tweaks.",
+                    "Added imagery illustrating the logo, data centers, refurbishment process.",
+                    "Implemented a fixed navigation bar with anchor links.",
+                    "Coordinated the team to align code, design, and messaging."
+                  ]
+                },
+                {
+                  "title": "Result",
+                  "type": "paragraph",
+                  "text": "A complete showcase site that reflects the company’s identity. We scored 12/20 (class average 10.8/20, top grade 14.5/20) while highlighting our web and strategic skills."
+                }
+              ]
+            }
+          ]
         },
         {
-          "title": "Management app",
-          "description": "Designing a CRUD application backed by a Node API.",
-          "stack": "Node · Express · PostgreSQL"
+          "title": "Personal project",
+          "description": "AI research & procedural generation",
+          "items": [
+            {
+              "title": "Gen3DMap",
+              "badge": "Side project · AI",
+              "summary": "Building an AI able to generate playable, customizable 3D maps automatically.",
+              "mediaKey": "map",
+              "segments": [
+                {
+                  "title": "Context",
+                  "type": "paragraph",
+                  "text": "Authoring 3D maps manually is time-consuming and expensive. The idea is to automate it without sacrificing variety, gameplay, or visual coherence."
+                },
+                {
+                  "title": "Objective",
+                  "type": "paragraph",
+                  "text": "Design an AI/procedural system that produces parameterized terrains and exports them to Unity or Unreal."
+                },
+                {
+                  "title": "Work in progress",
+                  "type": "steps",
+                  "items": [
+                    {
+                      "title": "Research & analysis",
+                      "details": [
+                        "Studying Perlin noise, Voronoï, 3D GANs, L-systems, etc.",
+                        "Reviewing famous procedural engines (Minecraft, No Man’s Sky, …)."
+                      ]
+                    },
+                    {
+                      "title": "Data preparation",
+                      "details": [
+                        "Collecting existing maps (terrains, cities, dungeons).",
+                        "Building a 3D dataset (voxels, meshes, heightmaps).",
+                        "Annotating key areas: POIs, playable zones, resources."
+                      ]
+                    },
+                    {
+                      "title": "AI modeling",
+                      "details": [
+                        "Experimenting with 3D GANs or enhanced procedural generation.",
+                        "Adding control parameters: density, biomes, topography."
+                      ]
+                    },
+                    {
+                      "title": "Visualization & integration",
+                      "details": [
+                        "Exporting meshes or heightmaps for Unity.",
+                        "Realtime display with a navigation camera.",
+                        "Simple UI to tweak and test parameters."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     "hobbies": {
       "title": "Hobbies",
-      "description": "What keeps me balanced outside the screen.",
-      "items": [
-        {
-          "title": "Tech watch",
-          "description": "Reading articles and testing new libraries."
-        },
+      "description": "The same passions showcased on the legacy page, now redesigned here.",
+      "groups": [
         {
           "title": "Sports",
-          "description": "Running and fitness to stay energized."
+          "intro": "Activities that teach discipline, teamwork, and resilience.",
+          "items": [
+            {
+              "title": "Climbing",
+              "description": "Started in 2023 at ACCA (Alti Club Cournon d’Auvergne). Friendly atmosphere, fast progress, and a continuous personal challenge.",
+              "meta": "ACCA – since 2023",
+              "imageKey": "escalade"
+            },
+            {
+              "title": "Volleyball",
+              "description": "Discovered in 2024 and instantly hooked. University practices, free sessions, and beach volley with friends to improve position by position.",
+              "meta": "Indoor & beach volley",
+              "imageKey": "volley"
+            },
+            {
+              "title": "Golf",
+              "description": "Member of Royat Charade golf club since 2018. A sport that demands focus, patience, and constant self-evaluation.",
+              "meta": "Royat Charade golf",
+              "imageKey": "golf"
+            }
+          ]
+        },
+        {
+          "title": "Video games",
+          "intro": "Strategic playground to train communication and anticipation.",
+          "items": [
+            {
+              "title": "Civilization VI",
+              "description": "Turn-based strategy by Firaxis. After solo runs I moved to multiplayer for the discussions, shared resource management, and joint war planning.",
+              "meta": "Goal: complete every achievement",
+              "imageKey": "civilization"
+            }
+          ]
+        },
+        {
+          "title": "Creativity & puzzles",
+          "intro": "Where I experiment with colors, shapes, and logic.",
+          "items": [
+            {
+              "title": "Mixed media art",
+              "description": "Drawing, miniature painting, and photography to play with color, light, and precision.",
+              "highlights": ["Drawing", "Painting", "Photography"],
+              "imageKey": "dessin"
+            },
+            {
+              "title": "Puzzles",
+              "description": "Logic games and mechanical puzzles that sharpen patience and observation.",
+              "imageKey": "puzzle"
+            }
+          ]
         }
       ]
     },
     "contact": {
+      "badge": "Stay in touch",
       "title": "Contact",
-      "description": "Want to collaborate or learn more? Drop me a line.",
+      "description": "Same intention as the legacy contact page: a straightforward form that reaches me directly.",
+      "highlights": [
+        {
+          "title": "Modernized form",
+          "description": "A couple of fields and your message lands in my inbox, just like on the main branch."
+        },
+        {
+          "title": "Response time",
+          "description": "I usually reply within 48h for internship, project, or casual chat requests."
+        }
+      ],
       "form": {
         "name": "Name",
         "namePlaceholder": "Your full name",
@@ -170,15 +339,23 @@
         "emailPlaceholder": "name@example.com",
         "message": "Message",
         "messagePlaceholder": "Describe your project…",
-        "cta": "Send"
+        "cta": "Send",
+        "note": "All fields are required, just like on the former contact.php."
       },
-      "cvHint": "You can also download my resume below or from the dedicated page."
+      "cvHint": "You can also download my resume below or from the dedicated page.",
+      "notice": "No data is stored: I simply receive your email."
     },
     "resume": {
+      "badge": "Document",
       "title": "Resume",
-      "description": "Download my resume or embed it directly on this page.",
-      "instructions": "Add here a link to a PDF or an embed from Google Drive/Canva.",
-      "downloadCta": "Download my resume"
+      "description": "Just like the legacy CV page: preview first, then open or download the PDF.",
+      "instructions": "Click the preview to open it in a new tab or use the actions below.",
+      "previewAlt": "Preview of Grégoire Fortuné’s resume",
+      "actions": {
+        "view": "Open in new tab",
+        "download": "Download the resume",
+        "note": "PDF file (FR)."
+      }
     }
   }
 }

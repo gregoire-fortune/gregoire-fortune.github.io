@@ -1,17 +1,31 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useTranslation } from "react-i18next";
+
+import iutImage from "../../assets/curriculum/iut.png";
+import lyceeImage from "../../assets/curriculum/lycee.png";
 
 type TimelineEntry = {
   title: string;
   subtitle: string;
   timeframe: string;
   description: string;
-  details?: string;
+  details?: string | string[];
+  mediaKey?: keyof typeof TIMELINE_MEDIA | string;
+  imageAlt?: string;
+  highlight?: string;
 };
+
+const TIMELINE_MEDIA = {
+  iut: iutImage,
+  lycee: lyceeImage
+} as const;
 
 export const CurriculumPage = () => {
   const { t } = useTranslation();
-  const milestones = (t("pages.curriculum.timeline", { returnObjects: true }) as TimelineEntry[]) ?? [];
+  const milestones = useMemo(
+    () => (t("pages.curriculum.timeline", { returnObjects: true }) as TimelineEntry[]) ?? [],
+    [t]
+  );
   const [selectedMilestone, setSelectedMilestone] = useState<TimelineEntry | null>(null);
   const [isOverlayVisible, setOverlayVisible] = useState(false);
 
@@ -54,7 +68,13 @@ export const CurriculumPage = () => {
         <ol
           className="relative space-y-10 rounded pl-3 before:absolute before:left-3 before:top-0 before:h-full before:w-[3px] before:bg-slate-200 before:content-[''] dark:before:bg-slate-800 md:space-y-12 md:pl-0 md:before:left-1/2 md:before:-translate-x-1/2"
         >
-        {milestones.map((milestone, index) => (
+        {milestones.map((milestone, index) => {
+          const mediaSrc =
+            milestone.mediaKey && milestone.mediaKey in TIMELINE_MEDIA
+              ? TIMELINE_MEDIA[milestone.mediaKey as keyof typeof TIMELINE_MEDIA]
+              : undefined;
+
+          return (
           <li key={`${milestone.title}-${milestone.timeframe}`} className="relative ml-8 md:ml-0">
             <span
               className="absolute -left-3 top-3 h-4 w-4 rounded-full border-4 border-white bg-brand shadow-md dark:border-slate-900 md:left-1/2 md:-translate-x-1/2"
@@ -76,6 +96,19 @@ export const CurriculumPage = () => {
                   {milestone.timeframe}
                 </span>
               </div>
+              {milestone.highlight && (
+                <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                  {milestone.highlight}
+                </p>
+              )}
+              {mediaSrc && (
+                <img
+                  src={mediaSrc}
+                  alt={milestone.imageAlt ?? milestone.title}
+                  className="mt-4 h-32 w-full rounded-2xl border border-slate-200 object-contain p-3 dark:border-slate-800"
+                  loading="lazy"
+                />
+              )}
               <p className="mt-4 text-slate-600 dark:text-slate-300">{milestone.description}</p>
               <span className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-brand">
                 {t("pages.curriculum.cta")}
@@ -95,7 +128,8 @@ export const CurriculumPage = () => {
               </span>
             </button>
           </li>
-        ))}
+        );
+        })}
         </ol>
       </div>
 
@@ -115,14 +149,26 @@ export const CurriculumPage = () => {
           />
 
           <article className="relative z-10 max-w-2xl rounded-3xl border border-slate-200/40 bg-white p-8 shadow-2xl dark:border-slate-800/60 dark:bg-slate-900">
-            <div className="flex items-start justify-between gap-4">
-              <header>
+            <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+              <header className="flex-1">
                 <p className="text-sm uppercase tracking-wide text-brand">{selectedMilestone.timeframe}</p>
                 <h2 id="curriculum-detail-title" className="mt-1 text-2xl font-semibold">
                   {selectedMilestone.title}
                 </h2>
                 <p className="text-slate-500 dark:text-slate-400">{selectedMilestone.subtitle}</p>
+                {selectedMilestone.highlight && (
+                  <p className="mt-2 text-xs font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+                    {selectedMilestone.highlight}
+                  </p>
+                )}
               </header>
+              {selectedMilestone.mediaKey && selectedMilestone.mediaKey in TIMELINE_MEDIA && (
+                <img
+                  src={TIMELINE_MEDIA[selectedMilestone.mediaKey as keyof typeof TIMELINE_MEDIA]}
+                  alt={selectedMilestone.imageAlt ?? selectedMilestone.title}
+                  className="h-28 w-28 rounded-2xl border border-slate-200 object-contain p-2 dark:border-slate-700"
+                />
+              )}
               <button
                 type="button"
                 onClick={closeOverlay}
@@ -146,9 +192,19 @@ export const CurriculumPage = () => {
             </div>
 
             <p className="mt-6 text-lg text-slate-600 dark:text-slate-300">{selectedMilestone.description}</p>
-            {selectedMilestone.details && (
-              <p className="mt-4 text-slate-600 dark:text-slate-300">{selectedMilestone.details}</p>
-            )}
+            {(() => {
+              const details = Array.isArray(selectedMilestone.details)
+                ? selectedMilestone.details
+                : selectedMilestone.details
+                  ? [selectedMilestone.details]
+                  : [];
+
+              return details.map((detail) => (
+                <p key={detail} className="mt-4 text-slate-600 dark:text-slate-300">
+                  {detail}
+                </p>
+              ));
+            })()}
           </article>
         </div>
       )}

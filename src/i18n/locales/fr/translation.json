@@ -23,6 +23,11 @@
   "footer": {
     "signature": "© 2025 – Portfolio étudiant. Construit avec React + Tailwind."
   },
+  "mobile": {
+    "title": "Site non disponible sur mobile",
+    "message": "Ce portfolio n’est pas encore optimisé pour les écrans de téléphone. Merci de le consulter depuis un ordinateur.",
+    "cta": "Revenir plus tard"
+  },
   "pages": {
     "home": {
       "badge": "Portfolio",
@@ -96,23 +101,35 @@
     },
     "curriculum": {
       "title": "Mon cursus",
-      "description": "Un aperçu des formations et expériences qui structurent mon parcours académique.",
+      "description": "Un aperçu fidèle à l’ancienne page Cursus : du lycée au B.U.T avec les mêmes repères visuels.",
       "cta": "Voir les détails",
       "close": "Fermer",
       "timeline": [
         {
           "title": "B.U.T Informatique",
-          "subtitle": "IUT – Université",
-          "timeframe": "2023 - Aujourd’hui",
-          "description": "Programmation, architecture logicielle, bases de données, réseaux et gestion de projet.",
-          "details": "Modules professionnels, projets tuteurés, intervention en entreprise. Focus sur React, Node et la conception orientée objet."
+          "subtitle": "IUT d’Aubière – Université Clermont Auvergne",
+          "timeframe": "2024 — 2027",
+          "description": "1ère année en cours, avec un parcours professionnalisant mêlant théorie et projets.",
+          "details": [
+            "Formation axée sur la programmation, les bases de données, les réseaux et l’administration système.",
+            "Objectif : développer des compétences techniques solides tout en consolidant la méthodologie de travail en équipe et en projet."
+          ],
+          "mediaKey": "iut",
+          "imageAlt": "Logo de l’IUT Informatique",
+          "highlight": "Parcours B.U.T – promotions 2024-2027"
         },
         {
-          "title": "Lycée – Spécialité Numérique",
+          "title": "Lycée René Descartes",
           "subtitle": "Baccalauréat général",
-          "timeframe": "2020 - 2023",
-          "description": "Découverte des bases de la programmation, algorithmique et culture scientifique.",
-          "details": "Ateliers numériques, clubs scientifiques, premières notions d’algorithmique et d’automatisation."
+          "timeframe": "2022 — 2024",
+          "description": "Obtention du bac avec mention, spécialités Mathématiques et Physique-Chimie.",
+          "details": [
+            "Option Mathématiques expertes et approfondissement scientifique continu.",
+            "Rigueur analytique, esprit logique et curiosité nourris par les projets menés au lycée."
+          ],
+          "mediaKey": "lycee",
+          "imageAlt": "Logo du lycée René Descartes",
+          "highlight": "Base scientifique et méthodes de travail"
         }
       ]
     },
@@ -132,37 +149,178 @@
     },
     "projects": {
       "title": "Projets",
-      "description": "Un extrait des projets réalisés durant mes études ou en autonomie.",
-      "items": [
+      "description": "Même structure que la page Projects de la branche main : un projet universitaire détaillé et un side project personnel.",
+      "sections": [
         {
-          "title": "Portfolio React",
-          "description": "Mise en place d’un site multi-pages avec i18n, mode sombre et Tailwind.",
-          "stack": "React · TypeScript · Tailwind"
+          "title": "Projet universitaire",
+          "description": "SAE 1.06 – Site vitrine statique",
+          "items": [
+            {
+              "title": "CineRentPro",
+              "badge": "Travail d’équipe · HTML/CSS",
+              "summary": "Création d’un site vitrine pour une entreprise fictive de location et reconditionnement d’équipements multimédia.",
+              "mediaKey": "cinerent",
+              "segments": [
+                {
+                  "title": "Contexte",
+                  "type": "paragraph",
+                  "text": "Dans le cadre de la SAE 1.06, nous devions présenter CineRent Pro, entreprise fictive qui loue et reconditionne du matériel multimédia en Europe."
+                },
+                {
+                  "title": "Objectifs",
+                  "type": "list",
+                  "items": [
+                    "Appliquer les bases HTML/CSS pour structurer un site multi-sections.",
+                    "Organiser du contenu : présentation, analyse SWOT, données économiques et environnementales.",
+                    "Mettre en place une navigation claire avec ancrages internes et design responsive.",
+                    "Valoriser le travail d’équipe par une répartition des rôles (rédaction, design, intégration)."
+                  ]
+                },
+                {
+                  "title": "Travail réalisé",
+                  "type": "list",
+                  "items": [
+                    "Rédaction des contenus : présentation, SWOT, indicateurs économiques et écologiques.",
+                    "Structure HTML découpée en sections Introduction, Attributs, Environnement et Économie.",
+                    "Mise en page CSS, icônes Font Awesome et adaptations responsive.",
+                    "Insertion d’images (logo, data centers, processus de reconditionnement).",
+                    "Barre de navigation fixe avec liens d’ancrage.",
+                    "Coordination d’équipe pour synchroniser code, design et communication."
+                  ]
+                },
+                {
+                  "title": "Résultat",
+                  "type": "paragraph",
+                  "text": "Le site vitrine final reflète professionnellement l’identité de l’entreprise fictive. Nous avons obtenu 12/20 (moyenne 10,8/20 – note maxi 14,5/20) en mettant en avant nos compétences web et stratégiques."
+                }
+              ]
+            }
+          ]
         },
         {
-          "title": "Application de gestion",
-          "description": "Conception d’une application CRUD avec un backend Node.",
-          "stack": "Node · Express · PostgreSQL"
+          "title": "Projet personnel",
+          "description": "Recherche IA & génération procédurale",
+          "items": [
+            {
+              "title": "Gen3DMap",
+              "badge": "Side project · IA",
+              "summary": "Développement d’une IA capable de générer automatiquement des cartes 3D jouables et personnalisables.",
+              "mediaKey": "map",
+              "segments": [
+                {
+                  "title": "Contexte",
+                  "type": "paragraph",
+                  "text": "Créer manuellement des maps 3D est long et coûteux. L’idée est d’automatiser le processus tout en conservant variété, jouabilité et cohérence visuelle."
+                },
+                {
+                  "title": "Objectif",
+                  "type": "paragraph",
+                  "text": "Mettre au point une IA/génération procédurale capable de produire des terrains paramétrables puis de les exporter vers Unity ou Unreal."
+                },
+                {
+                  "title": "Travail en cours",
+                  "type": "steps",
+                  "items": [
+                    {
+                      "title": "Recherche et analyse",
+                      "details": [
+                        "Étude du bruit de Perlin, Voronoï, GANs 3D, L-systems…",
+                        "Revue des moteurs procéduraux populaires (Minecraft, No Man’s Sky, etc.)."
+                      ]
+                    },
+                    {
+                      "title": "Préparation des données",
+                      "details": [
+                        "Collecte de cartes existantes (terrains, villes, donjons).",
+                        "Création d’un dataset 3D (voxels, maillages, heightmaps).",
+                        "Annotation des zones importantes : zones jouables, points d’intérêt, ressources."
+                      ]
+                    },
+                    {
+                      "title": "Modélisation IA",
+                      "details": [
+                        "Expérimentations avec GAN 3D ou génération procédurale renforcée.",
+                        "Ajout de paramètres de contrôle : densité, biomes, topographie."
+                      ]
+                    },
+                    {
+                      "title": "Visualisation & intégration",
+                      "details": [
+                        "Export des cartes en mesh ou heightmap pour Unity.",
+                        "Affichage temps réel avec caméra de navigation.",
+                        "Interface simple pour tester différents paramètres."
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     },
     "hobbies": {
       "title": "Loisirs",
-      "description": "Ce qui me permet de garder l’équilibre en dehors de l’écran.",
-      "items": [
+      "description": "Les mêmes passions que sur la page Hobbies de la branche main, revisitées dans ce design.",
+      "groups": [
         {
-          "title": "Veille technologique",
-          "description": "Lecture d’articles et tests de nouvelles librairies."
+          "title": "Sports",
+          "intro": "Des activités qui mêlent dépassement de soi, esprit d’équipe et régularité.",
+          "items": [
+            {
+              "title": "Escalade",
+              "description": "Pratique depuis 2023 à l’ACCA (Alti Club Cournon d’Auvergne). Ambiance conviviale, progression rapide et challenge personnel constant.",
+              "meta": "ACCA – depuis 2023",
+              "imageKey": "escalade"
+            },
+            {
+              "title": "Volley",
+              "description": "Découverte en 2024 et coup de cœur immédiat. Entraînements universitaires, séances libres et beach volley avec des amis pour progresser poste après poste.",
+              "meta": "Volley & beach volley",
+              "imageKey": "volley"
+            },
+            {
+              "title": "Golf",
+              "description": "Membre du golf de Royat Charade depuis 2018. Sport de patience qui m’apprend la concentration, l’analyse et la remise en question coup après coup.",
+              "meta": "Golf de Royat Charade",
+              "imageKey": "golf"
+            }
+          ]
         },
         {
-          "title": "Sport",
-          "description": "Course et fitness pour rester en forme."
+          "title": "Jeux vidéo",
+          "intro": "Un terrain stratégique pour travailler la réflexion et la coopération.",
+          "items": [
+            {
+              "title": "Civilization VI",
+              "description": "Jeu de stratégie au tour par tour par Firaxis. Après le solo, je me suis tourné vers le multijoueur pour la communication en partie, la gestion commune des ressources et l’analyse stratégique.",
+              "meta": "Objectif : platiner le jeu",
+              "imageKey": "civilization"
+            }
+          ]
+        },
+        {
+          "title": "Créativité & esprit logique",
+          "intro": "Ce qui nourrit mon imagination hors écran.",
+          "items": [
+            {
+              "title": "Art en tout genre",
+              "description": "Dessin, peinture de figurines et photographie : trois façons d’expérimenter la couleur, la lumière et la précision.",
+              "highlights": ["Dessin", "Peinture", "Photographie"],
+              "imageKey": "dessin"
+            },
+            {
+              "title": "Casse-têtes",
+              "description": "Jeux de logique et casse-têtes physiques pour travailler patience et sens de l’observation.",
+              "imageKey": "puzzle"
+            }
+          ]
         }
       ]
     },
     "contact": {
       "title": "Contact",
-      "description": "Envie de collaborer ou d’en savoir plus ? Laissez-moi un message.",
+      "description": "",
       "form": {
         "name": "Nom",
         "namePlaceholder": "Votre nom complet",
@@ -172,13 +330,18 @@
         "messagePlaceholder": "Décrivez votre besoin…",
         "cta": "Envoyer"
       },
-      "cvHint": "Vous pourrez également télécharger mon CV ci-dessous ou sur la page dédiée."
+      "cvHint": "Vous pourrez également télécharger sur la page dédiée."
     },
     "resume": {
+      "badge": "Document",
       "title": "Mon CV",
-      "description": "Téléchargez mon CV ou intégrez-le directement dans cette page.",
-      "instructions": "Ajoutez ici un lien vers un PDF ou un embed issu de Google Drive/Canva.",
-      "downloadCta": "Télécharger mon CV"
+      "instructions": "",
+      "previewAlt": "Aperçu du CV de Grégoire Fortuné",
+      "actions": {
+        "view": "Afficher dans un nouvel onglet",
+        "download": "Télécharger le CV",
+        "note": "Fichier PDF (FR)."
+      }
     }
   }
 }

@@ -97,13 +97,17 @@ export const AnimatedWaveBackground = () => {
 		const context = canvas.getContext("2d");
 		if (!context) return;
 
+		const maxDpr = 1.25;
+		const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
 		const resize = () => {
-			const { innerWidth, innerHeight, devicePixelRatio = 1 } = window;
-			canvas.width = innerWidth * devicePixelRatio;
-			canvas.height = innerHeight * devicePixelRatio;
+			const { innerWidth, innerHeight } = window;
+			const dpr = Math.min(window.devicePixelRatio || 1, maxDpr);
+			canvas.width = innerWidth * dpr;
+			canvas.height = innerHeight * dpr;
 			canvas.style.width = `${innerWidth}px`;
 			canvas.style.height = `${innerHeight}px`;
-			context.setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+			context.setTransform(dpr, 0, 0, dpr, 0, 0);
 		};
 
 		resize();
@@ -112,6 +116,12 @@ export const AnimatedWaveBackground = () => {
 		let previousTime = performance.now();
 
 		const render = (time: number) => {
+			// Throttle to ~30fps to reduce GPU usage
+			if (time - previousTime < 33) {
+				animationRef.current = requestAnimationFrame(render);
+				return;
+			}
+
 			const dt = Math.min(0.04, (time - previousTime) / 1000);
 			previousTime = time;
 			const pointer = pointerRef.current;
@@ -127,16 +137,31 @@ export const AnimatedWaveBackground = () => {
 			context.clearRect(0, 0, width, height);
 
 			drawGradientBackdrop(context, width, height, themeRef.current);
-			drawWaveLines(context, width, height, time * 0.001, pointerRef.current);
+			if (!prefersReducedMotion) {
+				drawWaveLines(context, width, height, time * 0.001, pointerRef.current, themeRef.current);
+			}
 
 			animationRef.current = requestAnimationFrame(render);
 		};
 
 		animationRef.current = requestAnimationFrame(render);
 
+		const handleVisibility = () => {
+			if (document.hidden && animationRef.current) {
+				cancelAnimationFrame(animationRef.current);
+				animationRef.current = null;
+			} else if (!document.hidden && !animationRef.current) {
+				previousTime = performance.now();
+				animationRef.current = requestAnimationFrame(render);
+			}
+		};
+
+		document.addEventListener("visibilitychange", handleVisibility);
+
 		return () => {
 			if (animationRef.current) cancelAnimationFrame(animationRef.current);
 			window.removeEventListener("resize", resize);
+			document.removeEventListener("visibilitychange", handleVisibility);
 		};
 	}, []);
 
@@ -173,17 +198,24 @@ const drawWaveLines = (
 	width: number,
 	height: number,
 	elapsed: number,
-	pointer: PointerState
+	pointer: PointerState,
+	isDark: boolean
 ) => {
 	const gradient = ctx.createLinearGradient(0, height * 0.2, width, height * 0.8);
-	gradient.addColorStop(0, "rgba(56, 189, 248, 0.95)");
-	gradient.addColorStop(0.4, "rgba(129, 140, 248, 0.88)");
-	gradient.addColorStop(1, "rgba(236, 72, 153, 0.85)");
+	if (isDark) {
+		gradient.addColorStop(0, "rgba(125, 211, 252, 0.95)");
+		gradient.addColorStop(0.45, "rgba(129, 140, 248, 0.9)");
+		gradient.addColorStop(1, "rgba(248, 113, 113, 0.92)");
+	} else {
+		gradient.addColorStop(0, "rgba(14, 165, 233, 0.9)");
+		gradient.addColorStop(0.45, "rgba(99, 102, 241, 0.88)");
+		gradient.addColorStop(1, "rgba(236, 72, 153, 0.85)");
+	}
 
 	ctx.save();
-	ctx.shadowColor = "rgba(59, 130, 246, 0.2)";
-	ctx.shadowBlur = 25;
-	ctx.globalCompositeOperation = "lighter";
+	ctx.shadowColor = "rgba(0,0,0,0)";
+	ctx.shadowBlur = 0;
+	ctx.globalCompositeOperation = isDark ? "lighter" : "source-over";
 
 	const masterPhase = elapsed * 0.35;
 	const travel = elapsed * 0.08;
@@ -201,7 +233,7 @@ const drawWaveLines = (
 		ctx.setLineDash([dashLength, dashGap]);
 
 		ctx.beginPath();
-		for (let x = 0; x <= width; x += 2) {
+		for (let x = 0; x <= width; x += 3) {
 			const ratio = x / width;
 			const eased = ratio ** 1.35;
 			const slope = wave.baseline - eased * wave.perspective + breathing * (1 - depth * 0.7);
