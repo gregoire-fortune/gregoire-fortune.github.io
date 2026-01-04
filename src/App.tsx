@@ -10,22 +10,27 @@ import { HobbiesPage } from "./pages/Hobbies/HobbiesPage";
 import { ContactPage } from "./pages/Contact/ContactPage";
 import { ResumePage } from "./pages/Resume/ResumePage";
 
-const router = createBrowserRouter([
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <RootLayout />,
+      children: [
+        { index: true, element: <HomePage /> },
+        { path: "about", element: <AboutPage /> },
+        { path: "curriculum", element: <CurriculumPage /> },
+        { path: "skills", element: <SkillsPage /> },
+        { path: "projects", element: <ProjectsPage /> },
+        { path: "hobbies", element: <HobbiesPage /> },
+        { path: "contact", element: <ContactPage /> },
+        { path: "resume", element: <ResumePage /> },
+      ],
+    },
+  ],
   {
-    path: "/",
-    element: <RootLayout />,
-    children: [
-      { index: true, element: <HomePage /> },
-      { path: "about", element: <AboutPage /> },
-      { path: "curriculum", element: <CurriculumPage /> },
-      { path: "skills", element: <SkillsPage /> },
-      { path: "projects", element: <ProjectsPage /> },
-      { path: "hobbies", element: <HobbiesPage /> },
-      { path: "contact", element: <ContactPage /> },
-      { path: "resume", element: <ResumePage /> },
-    ],
+    basename: import.meta.env.BASE_URL,
   },
-]);
+);
 
 function App() {
   return <RouterProvider router={router} />;
