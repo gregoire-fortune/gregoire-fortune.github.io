@@ -55,14 +55,14 @@
         "paragraphs": [
           "Je suis actuellement en 2ème année de B.U.T Informatique. C’est là que je renforce mes compétences en algorithmie, développement web et conception d’applications.",
           "Le cursus mêle informatique pure (programmation, bases de données, réseaux) et compétences transverses comme la communication, la gestion de projet ou la finance, ce qui me permet d’avoir une vision complète du métier.",
-          "Je suis à la recherche d’un stage de 10 semaines à partir d'avril 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
+          "Je suis à la recherche d’un stage de 10 semaines à partir d’avril 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
         ]
       },
       "photoAlt": "Photo de Grégoire Fortuné avec un arrière-plan fleuri",
       "card": {
         "title": "Actuellement",
         "subtitle": "Étudiant en B.U.T Informatique",
-        "description": "IUT d’Aubière – 1ère année"
+        "description": "IUT d’Aubière – 2ème année"
       },
       "more": {
         "title": "Un peu plus sur moi",
@@ -101,7 +101,7 @@
     },
     "curriculum": {
       "title": "Mon cursus",
-      "description": "",
+      "description": "Un aperçu de mon parcours académique et des compétences acquises au fil des projets.",
       "cta": "Voir les détails",
       "close": "Fermer",
       "timeline": [
@@ -190,7 +190,7 @@
     },
     "projects": {
       "title": "Projets",
-      "description": " ",
+      "description": "Sélection de travaux universitaires et personnels qui illustrent ma progression et mes intérêts techniques.",
       "sections": [
         {
           "title": "Projet universitaire",
@@ -302,7 +302,7 @@
     },
     "hobbies": {
       "title": "Loisirs",
-      "description": " ",
+      "description": "Ce qui m’anime hors cadre académique et nourrit mes valeurs de persévérance, d’équipe et de créativité.",
       "groups": [
         {
           "title": "Sports",
@@ -361,7 +361,7 @@
     },
     "contact": {
       "title": "Contact",
-      "description": "",
+      "description": "Pour une question, un stage ou un projet, laissez-moi un message : je réponds dès que possible.",
       "form": {
         "name": "Nom",
         "namePlaceholder": "Votre nom complet",
@@ -376,7 +376,7 @@
     "resume": {
       "badge": "Document",
       "title": "Mon CV",
-      "instructions": "",
+      "instructions": "Consultez l’aperçu puis ouvrez ou téléchargez le PDF en français.",
       "previewAlt": "Aperçu du CV de Grégoire Fortuné",
       "actions": {
         "view": "Afficher dans un nouvel onglet",

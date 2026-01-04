@@ -53,16 +53,16 @@
       "description": "A few highlights to understand who I am and what drives my work.",
       "intro": {
         "paragraphs": [
-          "I’m in my first year of the B.U.T Informatique program where I build strong fundamentals in algorithms, web development, and software design.",
+          "I’m in my second year of the B.U.T Informatique program, strengthening my skills in algorithms, web development, and software design.",
           "The curriculum blends core CS topics (programming, databases, networking) with transversal skills such as communication, project management, and finance, giving me a broader view of the job.",
-          "I’m looking for a 10-week internship starting May 2026 to apply this knowledge within a professional team and keep learning by doing."
+          "I’m looking for a 10-week internship starting April 2026 to apply this knowledge within a professional team and keep learning by doing."
         ]
       },
       "photoAlt": "Portrait of Grégoire Fortuné in a garden",
       "card": {
         "title": "Right now",
         "subtitle": "B.U.T Informatique student",
-        "description": "IUT of Aubière – Year 1"
+        "description": "IUT of Aubière – Year 2"
       },
       "more": {
         "title": "A bit more about me",
@@ -101,18 +101,20 @@
     },
     "curriculum": {
       "title": "Curriculum",
-      "description": "Mirrors the legacy Cursus page: the same milestones with refreshed visuals.",
-      "cta": "View more details",
+      "description": "A look at my academic path and the skills I’ve built through projects.",
+      "cta": "View details",
       "close": "Close",
       "timeline": [
         {
           "title": "B.U.T Informatique",
           "subtitle": "IUT of Aubière – Université Clermont Auvergne",
-          "timeframe": "2024 — 2027",
-          "description": "Year 1 in progress with a hands-on program mixing theory and real projects.",
+          "timeframe": "2024 — 2026",
+          "description": "Year 2 in progress: deeper work after Year 1 with project management and programming (C, PHP, SQL).",
           "details": [
-            "Focus on programming, databases, networking, and system administration.",
-            "Goal: build solid technical foundations plus teamwork and project methodology."
+            "Software analysis and modeling, admin interface design, web and mobile development.",
+            "Database integration with ORM, deployment to servers and containers, software testing.",
+            "Intro to agile practices and teamwork on longer projects.",
+            "Year 1: foundations in algorithms, programming, databases, networking, and work methods."
           ],
           "mediaKey": "iut",
           "imageAlt": "IUT Informatique logo",
@@ -124,8 +126,7 @@
           "timeframe": "2022 — 2024",
           "description": "Graduated with honors, majoring in Mathematics and Physics-Chemistry.",
           "details": [
-            "Took the Advanced Math option to push analytical thinking further.",
-            "Developed rigor, logical mindset, and curiosity through labs and science projects."
+            "Took the Advanced Math option in senior year to dig deeper into advanced concepts."
           ],
           "mediaKey": "lycee",
           "imageAlt": "René Descartes high school logo",
@@ -191,7 +192,7 @@
     },
     "projects": {
       "title": "Projects",
-      "description": "Same storytelling as on the main branch: one academic project and one personal side project with detailed notes.",
+      "description": "A selection of academic and personal work that shows my progress and technical interests.",
       "sections": [
         {
           "title": "Academic project",
@@ -303,7 +304,7 @@
     },
     "hobbies": {
       "title": "Hobbies",
-      "description": "The same passions showcased on the legacy page, now redesigned here.",
+      "description": "What drives me outside class and shapes my sense of perseverance, teamwork, and creativity.",
       "groups": [
         {
           "title": "Sports",
@@ -361,37 +362,24 @@
       ]
     },
     "contact": {
-      "badge": "Stay in touch",
       "title": "Contact",
-      "description": "Same intention as the legacy contact page: a straightforward form that reaches me directly.",
-      "highlights": [
-        {
-          "title": "Modernized form",
-          "description": "A couple of fields and your message lands in my inbox, just like on the main branch."
-        },
-        {
-          "title": "Response time",
-          "description": "I usually reply within 48h for internship, project, or casual chat requests."
-        }
-      ],
+      "description": "For questions, internships, or projects, drop me a message and I’ll reply as soon as I can.",
       "form": {
         "name": "Name",
         "namePlaceholder": "Your full name",
         "email": "Email",
         "emailPlaceholder": "name@example.com",
         "message": "Message",
-        "messagePlaceholder": "Describe your project…",
-        "cta": "Send",
-        "note": "All fields are required, just like on the former contact.php."
+        "messagePlaceholder": "Describe your request…",
+        "cta": "Send"
       },
-      "cvHint": "You can also download my resume below or from the dedicated page.",
-      "notice": "No data is stored: I simply receive your email."
+      "cvHint": "You can also download it on the dedicated page."
     },
     "resume": {
       "badge": "Document",
       "title": "Resume",
-      "description": "Just like the legacy CV page: preview first, then open or download the PDF.",
-      "instructions": "Click the preview to open it in a new tab or use the actions below.",
+      "description": "",
+      "instructions": "Check the preview, then open or download the PDF in French.",
       "previewAlt": "Preview of Grégoire Fortuné’s resume",
       "actions": {
         "view": "Open in new tab",
