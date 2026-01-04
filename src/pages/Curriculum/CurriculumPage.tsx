@@ -83,8 +83,8 @@ export const CurriculumPage = () => {
             <button
               type="button"
               onClick={() => setSelectedMilestone(milestone)}
-              className={`group relative block w-full rounded-2xl border border-slate-200 bg-white/80 p-5 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md focus:outline-none focus-visible:ring focus-visible:ring-brand/40 backdrop-blur dark:border-slate-800 dark:bg-slate-900/40 md:w-[calc(50%-1.5rem)] ${
-                index % 2 === 0 ? "md:mr-auto md:pr-10" : "md:ml-auto md:pl-10"
+              className={`group relative block w-full rounded-2xl border border-slate-200 bg-white/80 p-4 text-left shadow-sm transition hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md focus:outline-none focus-visible:ring focus-visible:ring-brand/40 backdrop-blur dark:border-slate-800 dark:bg-slate-900/40 md:w-[42%] ${
+                index % 2 === 0 ? "md:mr-auto md:pr-6" : "md:ml-auto md:pl-6"
               }`}
             >
               <div className="flex flex-wrap items-center justify-between gap-3">
@@ -105,7 +105,7 @@ export const CurriculumPage = () => {
                 <img
                   src={mediaSrc}
                   alt={milestone.imageAlt ?? milestone.title}
-                  className="mt-4 h-32 w-full rounded-2xl border border-slate-200 object-contain p-3 dark:border-slate-800"
+                  className="mt-4 max-h-48 w-auto max-w-full rounded-2xl border border-slate-200 p-1 object-contain mx-auto dark:border-slate-800"
                   loading="lazy"
                 />
               )}
@@ -166,7 +166,7 @@ export const CurriculumPage = () => {
                 <img
                   src={TIMELINE_MEDIA[selectedMilestone.mediaKey as keyof typeof TIMELINE_MEDIA]}
                   alt={selectedMilestone.imageAlt ?? selectedMilestone.title}
-                  className="h-28 w-28 rounded-2xl border border-slate-200 object-contain p-2 dark:border-slate-700"
+                  className="max-h-48 w-auto max-w-[12rem] rounded-2xl border border-slate-200 p-1 object-contain mx-auto dark:border-slate-700"
                 />
               )}
               <button

@@ -53,9 +53,9 @@
       "description": "Voici quelques repères pour mieux comprendre qui je suis et ce qui motive ma progression en développement.",
       "intro": {
         "paragraphs": [
-          "Je suis actuellement en 1ère année de B.U.T Informatique. C’est là que je construis les bases solides nécessaires pour appréhender l’algorithmie, le développement web et la conception d’applications.",
+          "Je suis actuellement en 2ème année de B.U.T Informatique. C’est là que je renforce mes compétences en algorithmie, développement web et conception d’applications.",
           "Le cursus mêle informatique pure (programmation, bases de données, réseaux) et compétences transverses comme la communication, la gestion de projet ou la finance, ce qui me permet d’avoir une vision complète du métier.",
-          "Je suis à la recherche d’un stage de 10 semaines à partir de mai 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
+          "Je suis à la recherche d’un stage de 10 semaines à partir d'avril 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
         ]
       },
       "photoAlt": "Photo de Grégoire Fortuné avec un arrière-plan fleuri",
@@ -69,7 +69,7 @@
         "paragraphs": [
           "Je suis quelqu’un d’ambitieux qui cherche toujours à relever des défis plus exigeants. Ma curiosité me pousse à explorer de nouveaux sujets et à apprendre de nouvelles compétences dès que l’occasion se présente.",
           "Je vis aujourd’hui en Auvergne pour mes études, même si mes origines sont ailleurs. Ce changement m’a appris l’adaptabilité et l’ouverture à de nouveaux environnements.",
-          "Le sport occupe une place importante : handball, volley ou escalade m’apprennent l’entraide, la rigueur et le dépassement. Ces valeurs me suivent dans ma vie étudiante et dans les projets que j’entreprends."
+          "Le sport occupe une place importante : volley, handball ou escalade m’apprennent l’entraide, la rigueur et le dépassement. Ces valeurs me suivent dans ma vie étudiante et dans les projets que j’entreprends."
         ]
       },
       "traits": [
@@ -83,7 +83,7 @@
         },
         {
           "title": "Curiosité",
-          "description": "Veille régulière sur les technos web modernes et envie d’expérimenter."
+          "description": "Toujours prêt à découvrir de nouvelles technologies ou approches."
         }
       ],
       "gallery": {
@@ -101,18 +101,20 @@
     },
     "curriculum": {
       "title": "Mon cursus",
-      "description": "Un aperçu fidèle à l’ancienne page Cursus : du lycée au B.U.T avec les mêmes repères visuels.",
+      "description": "",
       "cta": "Voir les détails",
       "close": "Fermer",
       "timeline": [
         {
           "title": "B.U.T Informatique",
           "subtitle": "IUT d’Aubière – Université Clermont Auvergne",
-          "timeframe": "2024 — 2027",
-          "description": "1ère année en cours, avec un parcours professionnalisant mêlant théorie et projets.",
+          "timeframe": "2024 — 2026",
+          "description": "2ème année en cours : approfondissement de la 1ère année, gestion de projet et langages de programmation (C, PHP, SQL).",
           "details": [
-            "Formation axée sur la programmation, les bases de données, les réseaux et l’administration système.",
-            "Objectif : développer des compétences techniques solides tout en consolidant la méthodologie de travail en équipe et en projet."
+            "Analyse et modélisation logicielle, conception d’interfaces d’administration, développement web et mobile.",
+            "Intégration de bases de données avec ORM, déploiement sur serveurs et conteneurs, tests logiciels.",
+            "Initiation aux méthodes agiles et consolidation du travail en équipe sur projets longs.",
+            "1ère année : bases en algorithmique, programmation, bases de données, réseaux et méthodes de travail."
           ],
           "mediaKey": "iut",
           "imageAlt": "Logo de l’IUT Informatique",
@@ -124,9 +126,7 @@
           "timeframe": "2022 — 2024",
           "description": "Obtention du bac avec mention, spécialités Mathématiques et Physique-Chimie.",
           "details": [
-            "Option Mathématiques expertes et approfondissement scientifique continu.",
-            "Rigueur analytique, esprit logique et curiosité nourris par les projets menés au lycée."
-          ],
+            "Option Mathématiques expertes en Terminale pour approfondir les notions avancées."          ],
           "mediaKey": "lycee",
           "imageAlt": "Logo du lycée René Descartes",
           "highlight": "Base scientifique et méthodes de travail"
@@ -135,21 +135,62 @@
     },
     "skills": {
       "title": "Compétences & qualités",
-      "description": "Un mélange de compétences techniques et humaines qui guident ma façon de travailler.",
+      "description": "Compétences techniques, méthodo et qualités humaines mises en pratique sur mes projets.",
       "sections": [
         {
-          "title": "Stack technique",
-          "items": ["React / TypeScript", "Tailwind CSS", "Node.js", "SQL"]
+          "title": "Langages",
+          "items": [
+            { "label": "C", "icon": "i" },
+            { "label": "C++", "icon": "i" },
+            { "label": "C#", "icon": "i" },
+            { "label": "Python", "icon": "i" },
+            { "label": "Kotlin", "icon": "i" },
+            { "label": "PHP", "icon": "i" },
+            { "label": "Shell", "icon": "i" }
+          ]
         },
         {
-          "title": "Qualités humaines",
-          "items": ["Esprit d’équipe", "Curiosité", "Organisation", "Communication"]
+          "title": "Frameworks & runtimes",
+          "items": [
+            { "label": "React", "icon": "i" },
+            { "label": "Node.js", "icon": "i" },
+            { "label": ".NET MAUI", "icon": "i" },
+            { "label": "Blazor", "icon": "i" }
+          ]
+        },
+        {
+          "title": "Web & données",
+          "items": [
+            { "label": "HTML", "icon": "i" },
+            { "label": "CSS", "icon": "i" },
+            { "label": "JavaScript", "icon": "i" },
+            { "label": "SQL", "icon": "i" }
+          ]
+        },
+        {
+          "title": "Outils & qualité de code",
+          "items": [
+            { "label": "Docker", "icon": "i" },
+            { "label": "Git", "icon": "i" },
+            { "label": "Tests unitaires et d’intégration", "icon": "" },
+            { "label": "ORM (Entity Framework)", "icon": "i" },
+            { "label": "UML", "icon": "" },
+            { "label": "Design Patterns (SOLID)", "icon": "" }
+          ]
+        },
+        {
+          "title": "Méthodo & soft skills",
+          "items": [
+            { "label": "Gestion de projet agile (SCRUM-lite)", "icon": "" },
+            { "label": "Analyse et modélisation logicielle", "icon": "" },
+            { "label": "Esprit d’équipe et communication", "icon": "" }
+          ]
         }
       ]
     },
     "projects": {
       "title": "Projets",
-      "description": "Même structure que la page Projects de la branche main : un projet universitaire détaillé et un side project personnel.",
+      "description": " ",
       "sections": [
         {
           "title": "Projet universitaire",
@@ -261,7 +302,7 @@
     },
     "hobbies": {
       "title": "Loisirs",
-      "description": "Les mêmes passions que sur la page Hobbies de la branche main, revisitées dans ce design.",
+      "description": " ",
       "groups": [
         {
           "title": "Sports",

@@ -2,7 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import resumePreview from "../../assets/resume/cv-preview.png";
 
-const resumePdf = "/CV_Gregoire_FORTUNE.pdf";
+const resumePdf = "/public/CV_Gregoire_FORTUNE.pdf";
 
 export const ResumePage = () => {
   const { t } = useTranslation();

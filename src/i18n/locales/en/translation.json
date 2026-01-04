@@ -135,15 +135,57 @@
     },
     "skills": {
       "title": "Skills & qualities",
-      "description": "A balance of technical skills and soft skills that shape my collaborations.",
+      "description": "Technical, methodology, and soft skills I use across projects.",
       "sections": [
         {
-          "title": "Tech stack",
-          "items": ["React / TypeScript", "Tailwind CSS", "Node.js", "SQL"]
+          "title": "Languages",
+          "items": [
+            { "label": "C", "icon": "" },
+            { "label": "C++", "icon": "" },
+            { "label": "C#", "icon": "" },
+            { "label": "Python", "icon": "" },
+            { "label": "Kotlin", "icon": "" },
+            { "label": "PHP", "icon": "" },
+            { "label": "Shell", "icon": "" }
+          ]
         },
         {
-          "title": "Soft skills",
-          "items": ["Team spirit", "Curiosity", "Organization", "Communication"]
+          "title": "Frameworks & runtimes",
+          "items": [
+            { "label": "React", "icon": "" },
+            { "label": "Node.js", "icon": "" },
+            { "label": ".NET MAUI", "icon": "" },
+            { "label": "Blazor", "icon": "" }
+          ]
+        },
+        {
+          "title": "Web & data",
+          "items": [
+            { "label": "HTML", "icon": "" },
+            { "label": "CSS", "icon": "" },
+            { "label": "JavaScript", "icon": "" },
+            { "label": "SQL", "icon": "" }
+          ]
+        },
+        {
+          "title": "Tooling & code quality",
+          "items": [
+            { "label": "Docker", "icon": "" },
+            { "label": "Git", "icon": "" },
+            { "label": "Unit & integration testing", "icon": "" },
+            { "label": "Code quality (reviews, lint)", "icon": "" },
+            { "label": "ORM (Entity Framework)", "icon": "" },
+            { "label": "UML", "icon": "" },
+            { "label": "Design Patterns (SOLID)", "icon": "" }
+          ]
+        },
+        {
+          "title": "Methodology & soft skills",
+          "items": [
+            { "label": "Agile project handling (SCRUM-lite)", "icon": "" },
+            { "label": "Software analysis & modeling", "icon": "" },
+            { "label": "Team spirit and communication", "icon": "" }
+          ]
         }
       ]
     },
