@@ -43,6 +43,32 @@ export default defineConfig([
 ])
 ```
 
+
+## Project Architecture (recommended)
+
+Top-level:
+
+- `public/` — static files served as-is (favicon, manifest, PDF assets)
+- `src/` — application source
+- `docs/` — optional exported site for GitHub Pages
+
+Inside `src/` (recommended):
+
+- `main.tsx` — app bootstrap (providers, router)
+- `App.tsx` — route definitions and global layout
+- `pages/` — top-level routes; each page lives in its own folder with `index.tsx`
+- `components/` — reusable UI components (group by `ui/`, `layout/`, `form/`)
+- `layouts/` — layout components (`RootLayout.tsx`)
+- `hooks/` — custom React hooks
+- `services/` — API clients and external integrations
+- `lib/` — pure utilities and helpers
+- `i18n/` — i18next setup and `locales/`
+- `assets/` — images and media imported by components
+- `styles/` — global styles and tailwind overrides
+- `types/` — shared TypeScript types
+
+This repository has been reorganized to follow the structure above: pages are now exported from `src/pages/<Page>/index.tsx` and `App.tsx` imports them from their folder root.
+
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js

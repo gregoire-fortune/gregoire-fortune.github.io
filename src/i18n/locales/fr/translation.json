@@ -53,8 +53,8 @@
       "description": "Voici quelques repères pour mieux comprendre qui je suis et ce qui motive ma progression en développement.",
       "intro": {
         "paragraphs": [
-          "Je suis actuellement en 2ème année de B.U.T Informatique. C’est là que je renforce mes compétences en algorithmie, développement web et conception d’applications.",
-          "Le cursus mêle informatique pure (programmation, bases de données, réseaux) et compétences transverses comme la communication, la gestion de projet ou la finance, ce qui me permet d’avoir une vision complète du métier.",
+          "Je suis actuellement en 2ème année de B.U.T Informatique. C’est là que je renforce mes compétences en algorithmie, développement web/mobile et conception d’applications.",
+          "Le cursus mêle informatique pure (programmation, bases de données, réseaux) et compétences transverses comme la communication, la gestion de projet ou le droit, ce qui me permet d’avoir une vision complète du métier.",
           "Je suis à la recherche d’un stage de 10 semaines à partir d’avril 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
         ]
       },
@@ -74,7 +74,7 @@
       },
       "traits": [
         {
-          "title": "Ambition",
+          "title": "Ambitieux",
           "description": "Objectif : progresser à chaque projet et viser des missions plus complexes."
         },
         {
@@ -82,7 +82,7 @@
           "description": "Habitué aux projets d’équipe du B.U.T comme aux sports co."
         },
         {
-          "title": "Curiosité",
+          "title": "Curieux",
           "description": "Toujours prêt à découvrir de nouvelles technologies ou approches."
         }
       ],
@@ -101,7 +101,7 @@
     },
     "curriculum": {
       "title": "Mon cursus",
-      "description": "Un aperçu de mon parcours académique et des compétences acquises au fil des projets.",
+      "description": "Un aperçu de mon parcours académique.",
       "cta": "Voir les détails",
       "close": "Fermer",
       "timeline": [
@@ -109,7 +109,7 @@
           "title": "B.U.T Informatique",
           "subtitle": "IUT d’Aubière – Université Clermont Auvergne",
           "timeframe": "2024 — 2026",
-          "description": "2ème année en cours : approfondissement de la 1ère année, gestion de projet et langages de programmation (C, PHP, SQL).",
+          "description": "2ème année en cours : approfondissement de la 1ère année, gestion de projet et langages de programmation (C, PHP, SQL ...).",
           "details": [
             "Analyse et modélisation logicielle, conception d’interfaces d’administration, développement web et mobile.",
             "Intégration de bases de données avec ORM, déploiement sur serveurs et conteneurs, tests logiciels.",
@@ -152,7 +152,7 @@
         {
           "title": "Frameworks & runtimes",
           "items": [
-            { "label": "React", "icon": "i" },
+            { "label": "ReactNative", "icon": "i" },
             { "label": "Node.js", "icon": "i" },
             { "label": ".NET MAUI", "icon": "i" },
             { "label": "Blazor", "icon": "i" }
@@ -243,7 +243,7 @@
           "description": "Recherche IA & génération procédurale",
           "items": [
             {
-              "title": "Gen3DMap",
+              "title": "Gen3DMap (ce projet est encore à l'état d'idée)",
               "badge": "Side project · IA",
               "summary": "Développement d’une IA capable de générer automatiquement des cartes 3D jouables et personnalisables.",
               "mediaKey": "map",
@@ -369,9 +369,12 @@
         "emailPlaceholder": "nom@example.com",
         "message": "Message",
         "messagePlaceholder": "Décrivez votre besoin…",
-        "cta": "Envoyer"
+        "cta": "Envoyer",
+        "sending": "Envoi...",
+        "sent": "Message envoyé — merci !",
+        "error": "Une erreur est survenue, réessayez."
       },
-      "cvHint": "Vous pourrez également télécharger sur la page dédiée."
+      "cvHint": ""
     },
     "resume": {
       "badge": "Document",

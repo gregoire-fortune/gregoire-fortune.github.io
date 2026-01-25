@@ -1,14 +1,14 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 import { RootLayout } from "./layouts/RootLayout";
-import { HomePage } from "./pages/Home/HomePage";
-import { AboutPage } from "./pages/About/AboutPage";
-import { CurriculumPage } from "./pages/Curriculum/CurriculumPage";
-import { SkillsPage } from "./pages/Skills/SkillsPage";
-import { ProjectsPage } from "./pages/Projects/ProjectsPage";
-import { HobbiesPage } from "./pages/Hobbies/HobbiesPage";
-import { ContactPage } from "./pages/Contact/ContactPage";
-import { ResumePage } from "./pages/Resume/ResumePage";
+import { HomePage } from "./pages/Home";
+import { AboutPage } from "./pages/About";
+import { CurriculumPage } from "./pages/Curriculum";
+import { SkillsPage } from "./pages/Skills";
+import { ProjectsPage } from "./pages/Projects";
+import { HobbiesPage } from "./pages/Hobbies";
+import { ContactPage } from "./pages/Contact";
+import { ResumePage } from "./pages/Resume";
 
 const router = createBrowserRouter(
   [

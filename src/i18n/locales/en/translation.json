@@ -25,157 +25,156 @@
   },
   "mobile": {
     "title": "Mobile view not available",
-    "message": "This portfolio is not yet optimized for phone screens. Please visit from a computer to see the full experience.",
+    "message": "This portfolio is not yet optimized for phone screens. Please view it from a computer.",
     "cta": "Come back later"
   },
   "pages": {
     "home": {
       "badge": "Portfolio",
       "title": "Welcome to my digital space",
-      "description": "I’m an IT student building this portfolio to showcase my journey, projects, and personality.",
+      "description": "I am a computer science student building this portfolio to showcase my background, projects and personality.",
       "firstName": "Grégoire",
       "lastName": "Fortuné",
       "typingPrefix": "I am",
       "typingRoles": [
         "a B.U.T Computer Science student",
         "an aspiring developer",
-        "someone ambitious"
+        "an ambitious person"
       ],
       "photoAlt": "Portrait of Grégoire Fortuné",
-      "arrowLabel": "Jump to About",
+      "arrowLabel": "Go to About",
       "ctaProjects": "See my projects",
-      "ctaContact": "Get in touch"
+      "ctaContact": "Contact me"
     },
     "about": {
-      "badge": "Journey",
+      "badge": "Background",
       "title": "About me",
-      "lead": "I’m Grégoire Fortuné, currently studying computer science at the IUT of Aubière (France).",
-      "description": "A few highlights to understand who I am and what drives my work.",
+      "lead": "My name is Grégoire Fortuné and I study computer science at IUT d’Aubière (63).",
+      "description": "Here are some signposts to better understand who I am and what drives my progress in development.",
       "intro": {
         "paragraphs": [
-          "I’m in my second year of the B.U.T Informatique program, strengthening my skills in algorithms, web development, and software design.",
-          "The curriculum blends core CS topics (programming, databases, networking) with transversal skills such as communication, project management, and finance, giving me a broader view of the job.",
-          "I’m looking for a 10-week internship starting April 2026 to apply this knowledge within a professional team and keep learning by doing."
+          "I am currently in my 2nd year of the B.U.T Informatique program. This is where I strengthen my skills in algorithms, web/mobile development and application design.",
+          "The curriculum mixes core CS (programming, databases, networks) with transversal skills like communication, project management or law, which gives me a comprehensive view of the profession.",
+          "I am looking for a 10-week internship starting April 2026 to put these skills into practice within a professional team and continue learning on the job."
         ]
       },
-      "photoAlt": "Portrait of Grégoire Fortuné in a garden",
+      "photoAlt": "Photo of Grégoire Fortuné with a flowery background",
       "card": {
-        "title": "Right now",
+        "title": "Currently",
         "subtitle": "B.U.T Informatique student",
-        "description": "IUT of Aubière – Year 2"
+        "description": "IUT d’Aubière – Year 2"
       },
       "more": {
         "title": "A bit more about me",
         "paragraphs": [
-          "I’m ambitious and keep pushing myself with harder challenges. Curiosity drives me to explore new topics and learn fresh skills whenever I can.",
-          "I currently live in Auvergne for my studies even though my hometown is elsewhere, which taught me adaptability and openness to new environments.",
-          "Sports help me stay balanced: handball, volleyball, and climbing teach me teamwork, resilience, and focus—values I bring to every project."
+          "I am an ambitious person who always seeks to take on more demanding challenges. My curiosity drives me to explore new topics and learn new skills whenever the opportunity arises.",
+          "I currently live in Auvergne for my studies, although my origins are elsewhere. This change taught me adaptability and openness to new environments.",
+          "Sport plays an important role: volleyball, handball or climbing teach me mutual support, discipline and pushing limits. These values follow me in my student life and in the projects I undertake."
         ]
       },
       "traits": [
         {
-          "title": "Ambition",
-          "description": "Always looking to level up and tackle more complex missions."
+          "title": "Ambitious",
+          "description": "Goal: progress on every project and aim for more complex tasks."
         },
         {
-          "title": "Team mindset",
-          "description": "Comfortable collaborating, both in class projects and on the court."
+          "title": "Team player",
+          "description": "Used to team projects in the B.U.T and to team sports."
         },
         {
-          "title": "Curiosity",
-          "description": "Regularly experimenting with modern web tools and stacks."
+          "title": "Curious",
+          "description": "Always ready to discover new technologies or approaches."
         }
       ],
       "gallery": {
         "title": "Snapshots that define me",
         "items": {
-          "hand": "Handball – teamwork",
-          "puyDeDome": "Puy de Dôme – where I study",
-          "ambition": "Ambition and goals",
-          "idea": "Ideas and creativity",
-          "fractal": "My actual PC setup",
+          "hand": "Handball – team spirit",
+          "puyDeDome": "Puy de Dôme – my study area",
+          "ambition": "Ambition and pushing limits",
+          "idea": "Creativity and ideas",
+          "fractal": "My PC – my setup",
           "volley": "Volleyball – coordination",
-          "golf": "Golf – patience"
+          "golf": "Golf – patience and precision"
         }
       }
     },
     "curriculum": {
-      "title": "Curriculum",
-      "description": "A look at my academic path and the skills I’ve built through projects.",
+      "title": "My curriculum",
+      "description": "An overview of my academic path.",
       "cta": "View details",
       "close": "Close",
       "timeline": [
         {
           "title": "B.U.T Informatique",
-          "subtitle": "IUT of Aubière – Université Clermont Auvergne",
+          "subtitle": "IUT d’Aubière – Université Clermont Auvergne",
           "timeframe": "2024 — 2026",
-          "description": "Year 2 in progress: deeper work after Year 1 with project management and programming (C, PHP, SQL).",
+          "description": "2nd year in progress: deepening from first year, project management and programming languages (C, PHP, SQL ...).",
           "details": [
-            "Software analysis and modeling, admin interface design, web and mobile development.",
-            "Database integration with ORM, deployment to servers and containers, software testing.",
-            "Intro to agile practices and teamwork on longer projects.",
-            "Year 1: foundations in algorithms, programming, databases, networking, and work methods."
+            "Software analysis and modeling, design of admin interfaces, web and mobile development.",
+            "Database integration with ORM, deployment on servers and containers, software testing.",
+            "Introduction to agile methods and consolidation of teamwork on long projects.",
+            "1st year: foundations in algorithms, programming, databases, networks and working methods."
           ],
           "mediaKey": "iut",
           "imageAlt": "IUT Informatique logo",
-          "highlight": "B.U.T track – class of 2024-2027"
+          "highlight": "B.U.T path – classes 2024-2027"
         },
         {
           "title": "René Descartes High School",
           "subtitle": "General baccalaureate",
           "timeframe": "2022 — 2024",
-          "description": "Graduated with honors, majoring in Mathematics and Physics-Chemistry.",
+          "description": "Obtained the baccalaureate with honors, majors in Mathematics and Physics-Chemistry.",
           "details": [
-            "Took the Advanced Math option in senior year to dig deeper into advanced concepts."
+            "Advanced Mathematics option in final year to deepen advanced topics."
           ],
           "mediaKey": "lycee",
           "imageAlt": "René Descartes high school logo",
-          "highlight": "Scientific foundations & work methods"
+          "highlight": "Scientific foundation and work methods"
         }
       ]
     },
     "skills": {
       "title": "Skills & qualities",
-      "description": "Technical, methodology, and soft skills I use across projects.",
+      "description": "Technical skills, methodology and personal qualities applied across my projects.",
       "sections": [
         {
           "title": "Languages",
           "items": [
-            { "label": "C", "icon": "" },
-            { "label": "C++", "icon": "" },
-            { "label": "C#", "icon": "" },
-            { "label": "Python", "icon": "" },
-            { "label": "Kotlin", "icon": "" },
-            { "label": "PHP", "icon": "" },
-            { "label": "Shell", "icon": "" }
+            { "label": "C", "icon": "i" },
+            { "label": "C++", "icon": "i" },
+            { "label": "C#", "icon": "i" },
+            { "label": "Python", "icon": "i" },
+            { "label": "Kotlin", "icon": "i" },
+            { "label": "PHP", "icon": "i" },
+            { "label": "Shell", "icon": "i" }
           ]
         },
         {
           "title": "Frameworks & runtimes",
           "items": [
-            { "label": "React", "icon": "" },
-            { "label": "Node.js", "icon": "" },
-            { "label": ".NET MAUI", "icon": "" },
-            { "label": "Blazor", "icon": "" }
+            { "label": "React Native", "icon": "i" },
+            { "label": "Node.js", "icon": "i" },
+            { "label": ".NET MAUI", "icon": "i" },
+            { "label": "Blazor", "icon": "i" }
           ]
         },
         {
           "title": "Web & data",
           "items": [
-            { "label": "HTML", "icon": "" },
-            { "label": "CSS", "icon": "" },
-            { "label": "JavaScript", "icon": "" },
-            { "label": "SQL", "icon": "" }
+            { "label": "HTML", "icon": "i" },
+            { "label": "CSS", "icon": "i" },
+            { "label": "JavaScript", "icon": "i" },
+            { "label": "SQL", "icon": "i" }
           ]
         },
         {
           "title": "Tooling & code quality",
           "items": [
-            { "label": "Docker", "icon": "" },
-            { "label": "Git", "icon": "" },
+            { "label": "Docker", "icon": "i" },
+            { "label": "Git", "icon": "i" },
             { "label": "Unit & integration testing", "icon": "" },
-            { "label": "Code quality (reviews, lint)", "icon": "" },
-            { "label": "ORM (Entity Framework)", "icon": "" },
+            { "label": "ORM (Entity Framework)", "icon": "i" },
             { "label": "UML", "icon": "" },
             { "label": "Design Patterns (SOLID)", "icon": "" }
           ]
@@ -192,7 +191,7 @@
     },
     "projects": {
       "title": "Projects",
-      "description": "A selection of academic and personal work that shows my progress and technical interests.",
+      "description": "Selection of academic and personal works that illustrate my progress and technical interests.",
       "sections": [
         {
           "title": "Academic project",
@@ -201,40 +200,40 @@
             {
               "title": "CineRentPro",
               "badge": "Team work · HTML/CSS",
-              "summary": "Showcase site for a fictional company renting and refurbishing multimedia equipment.",
+              "summary": "Creation of a showcase site for a fictional company renting and refurbishing multimedia equipment.",
               "mediaKey": "cinerent",
               "segments": [
                 {
                   "title": "Context",
                   "type": "paragraph",
-                  "text": "For SAE 1.06 we had to present CineRent Pro, a fictional company operating across Europe with a focus on renting and refurbishing gear."
+                  "text": "As part of SAE 1.06, we had to present CineRent Pro, a fictional company that rents and refurbishes multimedia equipment in Europe."
                 },
                 {
-                  "title": "Goals",
+                  "title": "Objectives",
                   "type": "list",
                   "items": [
-                    "Apply core HTML/CSS to structure a multi-section website.",
-                    "Organize information: company intro, SWOT analysis, economic and environmental data.",
-                    "Build a clear navigation with anchor links and responsive design.",
-                    "Showcase team collaboration by splitting content writing, design, and integration."
+                    "Apply HTML/CSS basics to structure a multi-section site.",
+                    "Organize content: presentation, SWOT analysis, economic and environmental data.",
+                    "Set up clear navigation with internal anchors and responsive design.",
+                    "Highlight teamwork by distributing roles (copy, design, integration)."
                   ]
                 },
                 {
-                  "title": "What I delivered",
+                  "title": "Work done",
                   "type": "list",
                   "items": [
-                    "Wrote the copy: presentation, SWOT, economic and ecological metrics.",
-                    "Structured the HTML sections (Introduction, Assets, Environment, Economy).",
-                    "Styled the pages with CSS, Font Awesome, and responsive tweaks.",
-                    "Added imagery illustrating the logo, data centers, refurbishment process.",
-                    "Implemented a fixed navigation bar with anchor links.",
-                    "Coordinated the team to align code, design, and messaging."
+                    "Wrote content: presentation, SWOT, economic and ecological indicators.",
+                    "HTML structure divided into sections: Introduction, Attributes, Environment and Economy.",
+                    "CSS layout, Font Awesome icons and responsive adjustments.",
+                    "Inserted images (logo, data centers, refurbishment process).",
+                    "Fixed navigation bar with anchor links.",
+                    "Coordinated the team to synchronize code, design and communication."
                   ]
                 },
                 {
                   "title": "Result",
                   "type": "paragraph",
-                  "text": "A complete showcase site that reflects the company’s identity. We scored 12/20 (class average 10.8/20, top grade 14.5/20) while highlighting our web and strategic skills."
+                  "text": "The final showcase site professionally reflects the company identity. We scored 12/20 (average 10.8/20 – top grade 14.5/20) by emphasizing our web and strategic skills."
                 }
               ]
             }
@@ -245,9 +244,9 @@
           "description": "AI research & procedural generation",
           "items": [
             {
-              "title": "Gen3DMap",
+              "title": "Gen3DMap (this project is still at idea stage)",
               "badge": "Side project · AI",
-              "summary": "Building an AI able to generate playable, customizable 3D maps automatically.",
+              "summary": "Development of an AI capable of automatically generating playable and customizable 3D maps.",
               "mediaKey": "map",
               "segments": [
                 {
@@ -304,27 +303,27 @@
     },
     "hobbies": {
       "title": "Hobbies",
-      "description": "What drives me outside class and shapes my sense of perseverance, teamwork, and creativity.",
+      "description": "What drives me outside academics and nurtures my values of perseverance, teamwork and creativity.",
       "groups": [
         {
           "title": "Sports",
-          "intro": "Activities that teach discipline, teamwork, and resilience.",
+          "intro": "Activities that combine pushing limits, teamwork and regular practice.",
           "items": [
             {
               "title": "Climbing",
-              "description": "Started in 2023 at ACCA (Alti Club Cournon d’Auvergne). Friendly atmosphere, fast progress, and a continuous personal challenge.",
+              "description": "Practicing since 2023 at ACCA (Alti Club Cournon d’Auvergne). Friendly atmosphere, quick progress and constant personal challenge.",
               "meta": "ACCA – since 2023",
               "imageKey": "escalade"
             },
             {
               "title": "Volleyball",
-              "description": "Discovered in 2024 and instantly hooked. University practices, free sessions, and beach volley with friends to improve position by position.",
-              "meta": "Indoor & beach volley",
+              "description": "Discovered in 2024 and an immediate favorite. University trainings, casual sessions and beach volleyball with friends to improve position by position.",
+              "meta": "Volleyball & beach volleyball",
               "imageKey": "volley"
             },
             {
               "title": "Golf",
-              "description": "Member of Royat Charade golf club since 2018. A sport that demands focus, patience, and constant self-evaluation.",
+              "description": "Member of Royat Charade golf club since 2018. A sport of patience that teaches concentration, analysis and self-reflection.",
               "meta": "Royat Charade golf",
               "imageKey": "golf"
             }
@@ -332,29 +331,29 @@
         },
         {
           "title": "Video games",
-          "intro": "Strategic playground to train communication and anticipation.",
+          "intro": "A strategic field to work on thinking and cooperation.",
           "items": [
             {
               "title": "Civilization VI",
-              "description": "Turn-based strategy by Firaxis. After solo runs I moved to multiplayer for the discussions, shared resource management, and joint war planning.",
-              "meta": "Goal: complete every achievement",
+              "description": "A turn-based strategy game by Firaxis. After solo play I moved to multiplayer for communication, shared resource management and strategic planning.",
+              "meta": "Goal: complete achievements",
               "imageKey": "civilization"
             }
           ]
         },
         {
-          "title": "Creativity & puzzles",
-          "intro": "Where I experiment with colors, shapes, and logic.",
+          "title": "Creativity & logic",
+          "intro": "What feeds my imagination off-screen.",
           "items": [
             {
-              "title": "Mixed media art",
-              "description": "Drawing, miniature painting, and photography to play with color, light, and precision.",
+              "title": "Art in many forms",
+              "description": "Drawing, miniature painting and photography: three ways to experiment with color, light and precision.",
               "highlights": ["Drawing", "Painting", "Photography"],
               "imageKey": "dessin"
             },
             {
               "title": "Puzzles",
-              "description": "Logic games and mechanical puzzles that sharpen patience and observation.",
+              "description": "Logic games and puzzles to work on patience and observation.",
               "imageKey": "puzzle"
             }
           ]
@@ -363,27 +362,29 @@
     },
     "contact": {
       "title": "Contact",
-      "description": "For questions, internships, or projects, drop me a message and I’ll reply as soon as I can.",
+      "description": "For questions, an internship or a project, leave me a message: I will reply as soon as possible.",
       "form": {
         "name": "Name",
         "namePlaceholder": "Your full name",
         "email": "Email",
         "emailPlaceholder": "name@example.com",
         "message": "Message",
-        "messagePlaceholder": "Describe your request…",
-        "cta": "Send"
+        "messagePlaceholder": "Describe your need…",
+        "cta": "Send",
+        "sending": "Sending...",
+        "sent": "Message sent — thank you!",
+        "error": "An error occurred, please try again."
       },
-      "cvHint": "You can also download it on the dedicated page."
+      "cvHint": ""
     },
     "resume": {
       "badge": "Document",
-      "title": "Resume",
-      "description": "",
-      "instructions": "Check the preview, then open or download the PDF in French.",
-      "previewAlt": "Preview of Grégoire Fortuné’s resume",
+      "title": "My CV",
+      "instructions": "Check the preview then open or download the PDF in French.",
+      "previewAlt": "Preview of Grégoire Fortuné’s CV",
       "actions": {
         "view": "Open in new tab",
-        "download": "Download the resume",
+        "download": "Download the CV",
         "note": "PDF file (FR)."
       }
     }
