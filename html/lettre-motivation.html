@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grégoire FORTUNÉ | Portfolio > Lettre de Motivation</title>
+    <link rel="icon" type="image/png" href="/images/hardware_chip_icon_234120.ico">
+    <!-- scripts -->
+    <script src="/javaScript/navbar.js"></script>
+    <script src="/javaScript/footer.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="/CSS/navbar.css">
+    <link rel="stylesheet" href="/CSS/lettre-motivation.css">
+</head>
+
+<body>
+    <div class="background-image"></div>
+    <header class="navbar">
+        <a href="/index.html">
+            <img src="/images/hardware_chip_icon_234120.ico" alt="Logo">
+        </a>
+        <div id="navbar"></div>
+    </header>
+    <script src="/javaScript/navbar_hidden.js"></script>
+    <main>
+        <section class="cover-letter">
+            <h1>Lettre de Motivation</h1>
+            <div class="letter-container">
+                <div class="letter-header">
+                    <div class="sender-info">
+                        <p><strong>Grégoire FORTUNÉ</strong></p>
+                        <p>Étudiant en BUT Informatique, 1ère année</p>
+                        <p>IUT Clermont Auvergne - Site d'Aubière</p>
+                    </div>
+                    <div class="date">
+                        <p>Clermont-Ferrand, le <span id="current-date"></span></p>
+                    </div>
+                </div>
+
+                <div class="letter-subject">
+                    <p><strong>Objet :</strong> Candidature pour un stage de 10 semaines en développement informatique</p>
+                </div>
+
+                <div class="letter-greeting">
+                    <p>Madame, Monsieur,</p>
+                </div>
+
+                <div class="letter-body">
+                    <p>
+                        Actuellement étudiant en première année de Bachelor Universitaire Technologique (BUT) Informatique 
+                        à l'IUT Clermont Auvergne, site d'Aubière, je suis à la recherche d'un stage de 10 semaines à partir 
+                        de mai 2026. Ce stage représente pour moi une opportunité essentielle de mettre en pratique les 
+                        compétences théoriques acquises durant ma formation et de découvrir le monde professionnel.
+                    </p>
+
+                    <p>
+                        Ma formation m'a permis de développer des compétences solides en algorithmie, programmation, 
+                        développement web et gestion de bases de données. J'ai également acquis des compétences transversales 
+                        en gestion de projet, communication et travail en équipe, essentielles dans le domaine de l'informatique. 
+                        Ces enseignements théoriques m'ont donné l'envie de les confronter à la réalité du terrain et de 
+                        contribuer activement à des projets concrets au sein d'une entreprise.
+                    </p>
+
+                    <p>
+                        Je suis quelqu'un d'ambitieux et de curieux, toujours en quête de nouveaux défis et d'apprentissages. 
+                        Mon goût pour le travail d'équipe, développé notamment à travers ma pratique sportive (volley-ball, 
+                        handball), me permet de m'intégrer facilement dans un collectif et de collaborer efficacement. 
+                        L'escalade, que je pratique régulièrement, m'a appris la persévérance et la capacité à me concentrer 
+                        sur mes objectifs, des qualités que je souhaite mettre au service de votre organisation.
+                    </p>
+
+                    <p>
+                        S'améliorer continuellement est une valeur qui me tient à cœur. Je considère chaque expérience comme 
+                        une opportunité d'apprentissage et de croissance personnelle. C'est pourquoi je suis particulièrement 
+                        motivé à l'idée de rejoindre votre équipe, où je pourrais non seulement apporter ma contribution, 
+                        mais également enrichir mes connaissances pratiques et développer ma vision du métier de développeur.
+                    </p>
+
+                    <p>
+                        Je serais ravi de pouvoir échanger avec vous sur les opportunités de stage au sein de votre structure 
+                        et de vous présenter plus en détail mon parcours et mes motivations. Je reste à votre disposition 
+                        pour un entretien à votre convenance.
+                    </p>
+                </div>
+
+                <div class="letter-closing">
+                    <p>
+                        Dans l'attente de votre retour, je vous prie d'agréer, Madame, Monsieur, l'expression de mes 
+                        salutations distinguées.
+                    </p>
+                    <div class="signature">
+                        <p><strong>Grégoire FORTUNÉ</strong></p>
+                    </div>
+                </div>
+
+                <div class="letter-attachments">
+                    <p><em>Pièces jointes : Curriculum Vitae</em></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div id="footer"></div>
+    </footer>
+    <script>
+        // Set current date
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        const today = new Date();
+        document.getElementById('current-date').textContent = today.toLocaleDateString('fr-FR', options);
+    </script>
+</body>
+
+</html>
