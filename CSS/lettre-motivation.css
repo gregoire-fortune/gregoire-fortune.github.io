@@ -1,0 +1,213 @@
+/* Mise en page principale */
+main {
+    max-width: 1000px;
+    margin: 17.18vh auto 1vh auto;
+    padding: 2rem 1rem;
+    border-radius: 3%;
+}
+
+/* Section de la lettre de motivation */
+.cover-letter {
+    background: linear-gradient(135deg, rgba(30, 30, 40, 0.92), rgba(20, 20, 30, 0.92));
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    padding: 2.5rem 2rem;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.cover-letter h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Conteneur de la lettre */
+.letter-container {
+    background: rgba(255, 255, 255, 0.98);
+    border-radius: 12px;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    color: #333;
+    line-height: 1.8;
+}
+
+/* En-tête de la lettre */
+.letter-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.sender-info p {
+    margin: 0.2rem 0;
+    color: #555;
+}
+
+.date {
+    text-align: right;
+}
+
+.date p {
+    margin: 0;
+    color: #555;
+    font-style: italic;
+}
+
+/* Objet de la lettre */
+.letter-subject {
+    margin-bottom: 2rem;
+    padding: 0.8rem 1rem;
+    background: rgba(106, 159, 248, 0.1);
+    border-left: 4px solid #6a9ff8;
+    border-radius: 4px;
+}
+
+.letter-subject p {
+    margin: 0;
+    color: #333;
+}
+
+/* Formule d'appel */
+.letter-greeting {
+    margin-bottom: 1.5rem;
+}
+
+.letter-greeting p {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Corps de la lettre */
+.letter-body {
+    margin-bottom: 2rem;
+}
+
+.letter-body p {
+    margin-bottom: 1.2rem;
+    text-align: justify;
+    color: #444;
+    font-size: 1.05rem;
+    line-height: 1.9;
+}
+
+.letter-body p:last-child {
+    margin-bottom: 0;
+}
+
+/* Formule de politesse et signature */
+.letter-closing {
+    margin-bottom: 2rem;
+}
+
+.letter-closing > p {
+    margin-bottom: 2rem;
+    text-align: justify;
+    color: #444;
+    font-size: 1.05rem;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 2rem;
+}
+
+.signature p {
+    margin: 0;
+    color: #333;
+    font-size: 1.1rem;
+}
+
+/* Pièces jointes */
+.letter-attachments {
+    padding-top: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.letter-attachments p {
+    margin: 0;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    main {
+        padding: 1rem 0.5rem 0 0.5rem;
+    }
+    
+    .cover-letter {
+        padding: 1.5rem 1rem;
+    }
+    
+    .cover-letter h1 {
+        font-size: 2rem;
+    }
+    
+    .letter-container {
+        padding: 2rem 1.5rem;
+    }
+    
+    .letter-header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .date {
+        text-align: left;
+    }
+    
+    .letter-body p,
+    .letter-closing > p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .letter-container {
+        padding: 1.5rem 1rem;
+    }
+    
+    .cover-letter h1 {
+        font-size: 1.7rem;
+    }
+    
+    .letter-body p,
+    .letter-closing > p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+}
+
+/* Style d'impression */
+@media print {
+    .background-image,
+    header,
+    footer {
+        display: none;
+    }
+    
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .cover-letter {
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+    }
+    
+    .letter-container {
+        box-shadow: none;
+        padding: 2rem;
+    }
+}
