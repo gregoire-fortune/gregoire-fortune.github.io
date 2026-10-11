@@ -21,7 +21,7 @@
     "en": "Anglais"
   },
   "footer": {
-    "signature": "© 2025 – Portfolio étudiant. Construit avec React + Tailwind."
+    "signature": "© 2026 – Portfolio étudiant. Construit avec React + Tailwind."
   },
   "mobile": {
     "title": "Site non disponible sur mobile",
@@ -32,13 +32,13 @@
     "home": {
       "badge": "Portfolio",
       "title": "Bienvenue sur mon espace numérique",
-      "description": "Je suis étudiant en informatique et je construis ce portfolio pour présenter mon parcours, mes projets et ma personnalité.",
+      "description": "Je suis étudiant en deuxième année de B.U.T Informatique. Ce portfolio présente mon parcours, mes projets et les expériences qui construisent ma pratique du développement.",
       "firstName": "Grégoire",
       "lastName": "Fortuné",
       "typingPrefix": "Je suis",
       "typingRoles": [
         "étudiant en B.U.T Informatique",
-        "un futur développeur",
+        "un développeur d’outils métier",
         "quelqu'un d'ambitieux"
       ],
       "photoAlt": "Portrait de Grégoire Fortuné",
@@ -55,14 +55,14 @@
         "paragraphs": [
           "Je suis actuellement en 2ème année de B.U.T Informatique. C’est là que je renforce mes compétences en algorithmie, développement web/mobile et conception d’applications.",
           "Le cursus mêle informatique pure (programmation, bases de données, réseaux) et compétences transverses comme la communication, la gestion de projet ou le droit, ce qui me permet d’avoir une vision complète du métier.",
-          "Je suis à la recherche d’un stage de 10 semaines à partir d’avril 2026 afin de mettre en pratique ces connaissances dans une équipe professionnelle et de continuer à apprendre sur le terrain."
+          "En 2026, j’ai réalisé un stage de dix semaines chez GRDF autour de l’automatisation de processus liés à la maintenance préventive. Cette expérience m’a permis de confronter mes compétences à des contraintes métier et techniques réelles."
         ]
       },
       "photoAlt": "Photo de Grégoire Fortuné avec un arrière-plan fleuri",
       "card": {
         "title": "Actuellement",
         "subtitle": "Étudiant en B.U.T Informatique",
-        "description": "IUT d’Aubière – 2ème année"
+          "description": "IUT d’Aubière – deuxième année"
       },
       "more": {
         "title": "Un peu plus sur moi",
@@ -109,7 +109,7 @@
           "title": "B.U.T Informatique",
           "subtitle": "IUT d’Aubière – Université Clermont Auvergne",
           "timeframe": "2024 — 2026",
-          "description": "2ème année en cours : approfondissement de la 1ère année, gestion de projet et langages de programmation (C, PHP, SQL ...).",
+          "description": "Deuxième année : approfondissement de la programmation, de la gestion de projet et de la conception d’applications.",
           "details": [
             "Analyse et modélisation logicielle, conception d’interfaces d’administration, développement web et mobile.",
             "Intégration de bases de données avec ORM, déploiement sur serveurs et conteneurs, tests logiciels.",
@@ -119,6 +119,19 @@
           "mediaKey": "iut",
           "imageAlt": "Logo de l’IUT Informatique",
           "highlight": "Parcours B.U.T – promotions 2024-2027"
+        },
+        {
+          "title": "Stage – GRDF",
+          "subtitle": "Délégation Sécurité Industrielle – région Sud-Est",
+          "timeframe": "6 avril — 19 juin 2026",
+          "description": "Automatisation de processus pour la maintenance préventive et le réordonnancement des plans d’entretien.",
+          "details": [
+            "Refonte en Python du script AutoHotkey AutoMat pour automatiser la génération du fichier de suivi de maintenance.",
+            "Développement de ReOrdo pour automatiser le réordonnancement de plans d’entretien à partir de fichiers Excel.",
+            "Utilisation de Selenium avec les interfaces métier SAP et GOTAM, dans un environnement contraint et sans accès direct aux API.",
+            "Conception modulaire, gestion des erreurs, suivi de progression et documentation destinée à des utilisateurs non informaticiens."
+          ],
+          "highlight": "Python · Selenium · Excel/VBA · SAP · GOTAM"
         },
         {
           "title": "Lycée René Descartes",
@@ -168,6 +181,15 @@
           ]
         },
         {
+          "title": "Automatisation & outils métier",
+          "items": [
+            { "label": "Selenium", "icon": "i" },
+            { "label": "Excel / VBA", "icon": "i" },
+            { "label": "SAP / GOTAM", "icon": "i" },
+            { "label": "Automatisation de processus", "icon": "" }
+          ]
+        },
+        {
           "title": "Outils & qualité de code",
           "items": [
             { "label": "Docker", "icon": "i" },
@@ -192,6 +214,66 @@
       "title": "Projets",
       "description": "Sélection de travaux universitaires et personnels qui illustrent ma progression et mes intérêts techniques.",
       "sections": [
+        {
+          "title": "Expérience professionnelle",
+          "description": "Stage de dix semaines chez GRDF consacré à l’automatisation de processus de maintenance préventive.",
+          "items": [
+            {
+              "title": "AutoMat",
+              "badge": "GRDF · Python · Selenium",
+              "summary": "Refonte d’un script AutoHotkey en outil Python modulaire pour automatiser la génération du fichier de suivi de la maintenance préventive.",
+              "segments": [
+                {
+                  "title": "Contexte",
+                  "type": "paragraph",
+                  "text": "Le processus existant dépendait fortement de coordonnées d’écran et de temporisations fixes, ce qui le rendait fragile face aux variations d’interface et de performance."
+                },
+                {
+                  "title": "Travail réalisé",
+                  "type": "list",
+                  "items": [
+                    "Réécriture complète du processus en Python avec une architecture modulaire.",
+                    "Automatisation des interfaces web métier avec Selenium et attentes synchronisées sur l’état réel des pages.",
+                    "Conservation et déclenchement automatisé des macros VBA existantes dans les fichiers Excel.",
+                    "Ajout d’une interface de progression, de messages d’erreur et d’une documentation accessible."
+                  ]
+                },
+                {
+                  "title": "Résultat",
+                  "type": "paragraph",
+                  "text": "AutoMat reproduit le processus complet, de l’extraction des données à la génération du fichier de suivi, avec une structure plus lisible et une exécution plus fiable que le script initial."
+                }
+              ]
+            },
+            {
+              "title": "ReOrdo",
+              "badge": "GRDF · Python · Selenium · Excel",
+              "summary": "Création d’un outil pour automatiser le réordonnancement des plans d’entretien, auparavant réalisé manuellement.",
+              "segments": [
+                {
+                  "title": "Objectif",
+                  "type": "paragraph",
+                  "text": "ReOrdo charge des données depuis des fichiers Excel, applique les règles de réordonnancement et pilote les outils métier via leur interface utilisateur."
+                },
+                {
+                  "title": "Points clés",
+                  "type": "list",
+                  "items": [
+                    "Architecture modulaire basée sur des tâches métier réutilisables.",
+                    "Automatisation de Microsoft Edge avec Selenium dans un environnement de recette.",
+                    "Interface avec logs, progression et contrôle de pause pour sécuriser le traitement.",
+                    "Outil documenté et déployable sous forme d’exécutable pour des utilisateurs non informaticiens."
+                  ]
+                },
+                {
+                  "title": "Résultat",
+                  "type": "paragraph",
+                  "text": "ReOrdo rend le réordonnancement plus rapide, reproductible et moins dépendant des manipulations manuelles, tout en respectant les précautions liées aux données sensibles."
+                }
+              ]
+            }
+          ]
+        },
         {
           "title": "Projet universitaire",
           "description": "SAE 1.06 – Site vitrine statique",

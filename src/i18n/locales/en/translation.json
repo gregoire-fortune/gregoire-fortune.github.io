@@ -21,7 +21,7 @@
     "en": "English"
   },
   "footer": {
-    "signature": "© 2025 – Student portfolio. Built with React + Tailwind."
+    "signature": "© 2026 – Student portfolio. Built with React + Tailwind."
   },
   "mobile": {
     "title": "Mobile view not available",
@@ -32,13 +32,13 @@
     "home": {
       "badge": "Portfolio",
       "title": "Welcome to my digital space",
-      "description": "I am a computer science student building this portfolio to showcase my background, projects and personality.",
+      "description": "I am a second-year B.U.T Computer Science student. This portfolio presents my background, projects and the experiences shaping my development practice.",
       "firstName": "Grégoire",
       "lastName": "Fortuné",
       "typingPrefix": "I am",
       "typingRoles": [
         "a B.U.T Computer Science student",
-        "an aspiring developer",
+        "a business automation developer",
         "an ambitious person"
       ],
       "photoAlt": "Portrait of Grégoire Fortuné",
@@ -55,14 +55,14 @@
         "paragraphs": [
           "I am currently in my 2nd year of the B.U.T Informatique program. This is where I strengthen my skills in algorithms, web/mobile development and application design.",
           "The curriculum mixes core CS (programming, databases, networks) with transversal skills like communication, project management or law, which gives me a comprehensive view of the profession.",
-          "I am looking for a 10-week internship starting April 2026 to put these skills into practice within a professional team and continue learning on the job."
+          "In 2026, I completed a ten-week internship at GRDF focused on automating processes related to preventive maintenance. This experience allowed me to apply my skills to real business and technical constraints."
         ]
       },
       "photoAlt": "Photo of Grégoire Fortuné with a flowery background",
       "card": {
         "title": "Currently",
         "subtitle": "B.U.T Informatique student",
-        "description": "IUT d’Aubière – Year 2"
+          "description": "IUT d’Aubière – second year"
       },
       "more": {
         "title": "A bit more about me",
@@ -109,7 +109,7 @@
           "title": "B.U.T Informatique",
           "subtitle": "IUT d’Aubière – Université Clermont Auvergne",
           "timeframe": "2024 — 2026",
-          "description": "2nd year in progress: deepening from first year, project management and programming languages (C, PHP, SQL ...).",
+          "description": "Second year: deepening programming, project management and application design skills.",
           "details": [
             "Software analysis and modeling, design of admin interfaces, web and mobile development.",
             "Database integration with ORM, deployment on servers and containers, software testing.",
@@ -119,6 +119,19 @@
           "mediaKey": "iut",
           "imageAlt": "IUT Informatique logo",
           "highlight": "B.U.T path – classes 2024-2027"
+        },
+        {
+          "title": "Internship – GRDF",
+          "subtitle": "Industrial Safety Delegation – South-East region",
+          "timeframe": "April 6 — June 19, 2026",
+          "description": "Process automation for preventive maintenance and the rescheduling of maintenance plans.",
+          "details": [
+            "Rebuilt the AutoHotkey AutoMat script in Python to automate maintenance tracking file generation.",
+            "Developed ReOrdo to automate maintenance plan rescheduling from Excel files.",
+            "Used Selenium with SAP and GOTAM business interfaces in a constrained environment without direct API access.",
+            "Designed modular code with error handling, progress tracking and documentation for non-technical users."
+          ],
+          "highlight": "Python · Selenium · Excel/VBA · SAP · GOTAM"
         },
         {
           "title": "René Descartes High School",
@@ -169,6 +182,15 @@
           ]
         },
         {
+          "title": "Automation & business tools",
+          "items": [
+            { "label": "Selenium", "icon": "i" },
+            { "label": "Excel / VBA", "icon": "i" },
+            { "label": "SAP / GOTAM", "icon": "i" },
+            { "label": "Process automation", "icon": "" }
+          ]
+        },
+        {
           "title": "Tooling & code quality",
           "items": [
             { "label": "Docker", "icon": "i" },
@@ -193,6 +215,66 @@
       "title": "Projects",
       "description": "Selection of academic and personal works that illustrate my progress and technical interests.",
       "sections": [
+        {
+          "title": "Professional experience",
+          "description": "Ten-week internship at GRDF focused on automating preventive maintenance processes.",
+          "items": [
+            {
+              "title": "AutoMat",
+              "badge": "GRDF · Python · Selenium",
+              "summary": "Rebuilt an AutoHotkey script as a modular Python tool to automate preventive maintenance tracking file generation.",
+              "segments": [
+                {
+                  "title": "Context",
+                  "type": "paragraph",
+                  "text": "The existing process relied heavily on screen coordinates and fixed delays, making it fragile when interfaces or performance changed."
+                },
+                {
+                  "title": "Work completed",
+                  "type": "list",
+                  "items": [
+                    "Rewrote the complete process in Python with a modular architecture.",
+                    "Automated business web interfaces with Selenium and waits synchronized with the actual page state.",
+                    "Kept and automatically triggered the existing VBA macros in Excel files.",
+                    "Added a progress interface, error messages and accessible documentation."
+                  ]
+                },
+                {
+                  "title": "Result",
+                  "type": "paragraph",
+                  "text": "AutoMat reproduces the complete process, from data extraction to tracking file generation, with clearer structure and more reliable execution than the initial script."
+                }
+              ]
+            },
+            {
+              "title": "ReOrdo",
+              "badge": "GRDF · Python · Selenium · Excel",
+              "summary": "Created a tool to automate the rescheduling of maintenance plans, previously handled manually.",
+              "segments": [
+                {
+                  "title": "Objective",
+                  "type": "paragraph",
+                  "text": "ReOrdo loads data from Excel files, applies rescheduling rules and controls business tools through their user interface."
+                },
+                {
+                  "title": "Key points",
+                  "type": "list",
+                  "items": [
+                    "Modular architecture based on reusable business tasks.",
+                    "Microsoft Edge automation with Selenium in a test environment.",
+                    "Interface with logs, progress tracking and pause control to secure processing.",
+                    "Documented tool deployable as an executable for non-technical users."
+                  ]
+                },
+                {
+                  "title": "Result",
+                  "type": "paragraph",
+                  "text": "ReOrdo makes rescheduling faster, reproducible and less dependent on manual actions while respecting the precautions required for sensitive data."
+                }
+              ]
+            }
+          ]
+        },
         {
           "title": "Academic project",
           "description": "SAE 1.06 – Static showcase website",
